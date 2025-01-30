@@ -1,0 +1,181 @@
+@media (max-width: 1200px) {
+  
+  body.disabled{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  
+  .navbar .menu-list{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: #222;
+    transition: all 0.3s ease;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    max-height: 80vh; /* Limit the height of the menu */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+    overflow-x: auto;
+  }
+
+/* Styling the custom scrollbar */
+.menu-list::-webkit-scrollbar {
+  width: 8px; /* Adjust the width of the scrollbar */
+  height: 8px; /* If you want a horizontal scrollbar, adjust height too */
+}
+
+.menu-list::-webkit-scrollbar-track {
+  background-color: #222; /* Match the menu background color */
+}
+
+.menu-list::-webkit-scrollbar-thumb {
+  background-color: #444; /* Slightly lighter color for the thumb */
+  border-radius: 4px; /* Optional: rounded corners */
+}
+
+.menu-list::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker thumb when hovered */
+}
+
+  .navbar.show .menu-list{
+    left: 0%;
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbar.show .menu-list li a{
+    margin-left: 0px;
+  
+   
+  }
+
+  .navbar .submenu {
+    padding-left: 120px; /* Indent submenu items for clarity */
+  }
+  .navbar .submenu {
+    position: relative; /* Change submenu to be inline in small screens */
+    display: none; /* Keep hidden by default */
+    margin-top: 5px;
+  }
+
+  /* Show submenu when clicked on mobile */
+  .has-submenu.active .submenu {
+    display: block;
+  }
+
+  
+  /* Optional: when a menu item is clicked, apply active class to show submenu */
+  .menu-item.active > a {
+    background-color: #555;
+  }
+  /* Show submenu toggle icon */
+  .navbar .submenu-icon {
+    display: inline-block;
+    color: #fff;
+  }
+  
+
+   /* Hide social icons on larger screens and fold them into the menu on smaller screens */
+   .navbar .social-icons {
+    display: none;
+  }
+
+  /* Display social icons within the menu list */
+  .navbar.show .menu-list .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+   /* Hide social icons in the main navbar and show them in the menu list */
+   .navbar .social-icons {
+    display: none;
+  }
+  .navbar.show .menu-list .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Adjust gap to match the menu item spacing */
+    margin-top: 30px;
+  }
+
+  /* Apply consistent spacing to each social icon */
+  .navbar.show .menu-list .social-icons a {
+    margin-top: 20px; /* Matches the spacing between menu items */
+    font-size: 1.5em; /* Adjust font size for readability */
+    color: #f2f2f2; /* Adjust color as needed */
+    transition: color 0.3s;
+  }
+
+  /* Hover effect for social icons */
+  .navbar.show .menu-list .social-icons a:hover {
+    color: #888;
+  }
+
+  .glass-text {
+    width: 80%; /* Reduce the width on smaller screens */
+    margin-top: 0; /* Remove negative margin for smaller screens */
+  }
+
+  .plane {
+    width: 100%; /* Make the plane image responsive */
+    top: -50px;  /* Adjust the top position */
+  }
+
+  .tooth {
+    width: 35%; /* Adjust the tooth image size */
+  }
+
+ /*  .curve {
+    z-index: -1; /* Remain behind the content */
+ /* } */
+
+
+
+
+
+ /* Ensure responsive layout for smaller screens */
+
+  .back-list-container {
+    max-height: 280px; /* Adjust height on smaller screens */
+    max-width: 250px; /* Smaller width for narrow screens */
+  }
+
+  .back-list-item {
+    flex-direction: column; /* Stack icon and text vertically on small screens */
+    align-items: flex-start; /* Align text to the left */
+  }
+
+  .back-list-item-icon {
+    margin-bottom: 8px; /* Space between icon and text on smaller screens */
+  }
+
+  .gallery-title h2 {
+    font-size: 4rem; /* Larger title for big screens */
+  }
+
+  .gallery-title p {
+    font-size: 1.4rem; /* Larger paragraph text */
+  }
+
+}

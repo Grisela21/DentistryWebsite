@@ -1,0 +1,97 @@
+{
+  "header": {
+    "home": "Home",
+    "about_us": "Chi siamo",
+    "services": "Servizi",
+    "technology": "Tecnologia",
+    "gallery": "Galleria",
+    "contact": "Contattaci",
+    "reviews": "Recensioni",
+    "treatment_plan": "Piano di trattamento"
+  },
+  "hero": {
+    "h1": "Il tuo sorriso perfetto inizia qui",
+    "h2": "Dore leggere. Sorrisi belli.",
+    "p": "Offriamo cure dentistiche complete con un focus sulla qualità e il comfort.",
+    "cta": "Contattaci"
+  },
+  "about_us": {
+    "h1": "Chi Siamo",
+    "p1": "Benvenuto nella nostra <span class='highlight'>clinica dentale a Tirana, Albania</span> <ion-icon name='happy-outline'></ion-icon>. Siamo specializzati nell'offrire <strong class='highlight'>cura dentale di livello mondiale</strong> per <span class='highlight'>pazienti internazionali</span>, soprattutto quelli che viaggiano dall'<span class='highlight'>Italia</span>. La nostra missione è garantire a ogni paziente trattamenti <strong class='highlight'>di alta qualità</strong>, <strong class='highlight'>accessibili</strong> in un <strong class='highlight'>ambiente moderno e confortevole</strong>.",
+    "p2": "Che tu stia visitando Tirana per <span class='highlight'>turismo</span> o <span class='highlight'>cura dentale</span>, siamo qui per rendere la tua esperienza <strong class='highlight'>eccezionale</strong>."
+  },
+  
+    "services": {
+      "title": "Esplora i Nostri Servizi",
+      "dental_cleaning": {
+        "title": "Pulizia Dentale",
+        "description": "Mantieni il tuo sorriso splendente con i nostri servizi professionali di pulizia. Rimuovi la placca ostinata e migliora la salute orale senza fatica.",
+        "services_list": [
+          "🦷 Implantologia",
+          "⚕️ Chirurgia Orale",
+          "💊 Terapia",
+          "✨ Odontoiatria Estetica",
+          "🦷 Ortodonzia"
+        ]
+      },
+      "aesthetic": {
+        "title": "Estetica",
+        "description": "Denti perfettamente allineati sono a portata di mano. Esplora soluzioni estetiche avanzate progettate con comfort e precisione.",
+        "services_list": [
+          "💆‍♀️ Trattamento Facciale",
+          "💪 Trattamento Corporeo",
+          "💉 Chirurgia Estetica"
+        ]
+      },
+      "general_surgery": {
+        "title": "Chirurgia Generale",
+        "description": "Non lasciare che problemi dentali imprevisti rovinino la tua giornata. Il nostro team è qui per offrirti assistenza immediata, ogni volta che ne hai bisogno.",
+        "services_list": [
+          "🦷 Estrazione del Dente del Giudizio",
+          "🦷 Estrazione del Dente (Denti Danneggiati/Infezionati)",
+          "🦠 Rimozione Cisti Orali",
+          "🦴 Innesto Osseo per Impianti",
+          "🌿 Chirurgia delle Gengive (Recessione Gengivale, Contorno)"
+        ]
+      }
+    },
+    
+      "technology": {
+        "title": "Tecnologia Dentale Avanzata",
+        "description": "Sperimenta le ultime innovazioni dentistiche con la nostra tecnologia all'avanguardia. Da immagini precise e trattamenti al laser a restauri in giornata, offriamo soluzioni efficienti, senza dolore e personalizzate per un sorriso più sano e luminoso.",
+        "services": [
+          {
+            "title": "Tecnologia di Imaging Avanzato",
+            "description": "Radiografie digitali a bassa radiazione e scansioni 3D per diagnosi precise.",
+            "details": [
+              {"icon": "📷", "text": "Immagini più chiare"},
+              {"icon": "🔒", "text": "Più sicuro"},
+              {"icon": "🩺", "text": "Rilevamento precoce"},
+              {"icon": "🛠️", "text": "Pianificazione del trattamento precisa"}
+            ]
+          },
+          {
+            "title": "Odontoiatria Laser",
+            "description": "Trattamenti senza dolore con tecnologia laser avanzata per una guarigione più rapida.",
+            "details": [
+              {"icon": "😊", "text": "Meno disagio"},
+              {"icon": "⏱️", "text": "Recupero più veloce"},
+              {"icon": "💉", "text": "Trattamenti precisi"}
+            ]
+          },
+          {
+            "title": "Restauri in Giornata",
+            "description": "Corone, ponti e faccette personalizzati realizzati in una sola visita con CEREC.",
+            "details": [
+              {"icon": "🦷", "text": "Appuntamenti rapidi"},
+              {"icon": "💪", "text": "Durevole"},
+              {"icon": "✨", "text": "Risultati dall'aspetto naturale"}
+            ]
+          }
+        ]
+      }
+    
+    
+  
+  
+}

@@ -1,0 +1,98 @@
+{
+  "header": {
+    "home": "Home",
+    "about_us": "Rreth Nesh",
+    "services": "Shërbime",
+    "technology": "Teknologji",
+    "gallery": "Galeria",
+    "contact": "Na kontaktoni",
+    "reviews": "Shqyrtime",
+    "treatment_plan": "Plani i Trajtimit"
+  },
+  "hero": {
+    "h1": "Smile juaj i përsosur fillon këtu",
+    "h2": "Duar të buta. Dhëmbë të bukur.",
+    "p": "Ne ofrojmë kujdes dentar gjithëpërfshirës me fokus në cilësi dhe komoditet.",
+    "cta": "Kontaktoni me ne"
+  },
+  "about_us": {
+    "h1": "Rreth Nesh",
+    "p1": "Mirësevini në <span class='highlight'>kliniken dentare në Tiranë, Shqipëri</span> <ion-icon name='happy-outline'></ion-icon>. Ne specializohemi në ofrimin e <strong class='highlight'>kujdesit dentar të nivelit botëror</strong> për <span class='highlight'>pacientë ndërkombëtarë</span>, veçanërisht ata që udhëtojnë nga <span class='highlight'>Italia</span>. Misioni ynë është të sigurojmë që çdo pacient të marrë <strong class='highlight'>trajtime të cilësisë së lartë</strong>, <strong class='highlight'>të përballueshme</strong> në një <strong class='highlight'>ambient modern dhe komod</strong>.",
+    "p2": "Pavarësisht nëse po vizitoni Tiranën për <span class='highlight'>turizëm</span> ose <span class='highlight'>kujdes dentar</span>, ne jemi këtu për të bërë përvojën tuaj <strong class='highlight'>të jashtëzakonshme</strong>."
+  },
+  
+    "services": {
+      "title": "Eksploro Shërbimet Tona",
+      "dental_cleaning": {
+        "title": "Pastrim Dentar",
+        "description": "Mbani buzëqeshjen tuaj të shkëlqyer me shërbimet tona profesionale të pastrimit. Hiqni pllakën kokëfortë dhe përmirësoni shëndetin oral pa mundim.",
+        "services_list": [
+          "🦷 Implantologji",
+          "⚕️ Kirurgji Orale",
+          "💊 Terapia",
+          "✨ Dentistri Estetik",
+          "🦷 Ortodonci"
+        ]
+      },
+      "aesthetic": {
+        "title": "Estetikë",
+        "description": "Disa dhëmbë të rregulluar perfekt janë vetëm një hap larg. Eksploroni zgjidhje të avancuara estetike të dizajnuara me komoditet dhe precizitet.",
+        "services_list": [
+          "💆‍♀️ Trajtim Fytyre",
+          "💪 Trajtim Trupi",
+          "💉 Kirurgji Estetike"
+        ]
+      },
+      "general_surgery": {
+        "title": "Kirurgji e Përgjithshme",
+        "description": "Mos lejoni që problemet e papritura dentare të shkatërrojnë ditën tuaj. Ekipi ynë është këtu për të ofruar ndihmë të menjëhershme, çdo herë që keni nevojë.",
+        "services_list": [
+          "🦷 Nxjerrje Dhëmbi i Udhëheqjes",
+          "🦷 Nxjerrje Dhëmbi (Dhëmbë të Dëmtuar/Të Infektuar)",
+          "🦠 Heqje Cistash Orale",
+          "🦴 Ndihmë Kockore për Implante",
+          "🌿 Kirurgji Gengivale (Recesion Gengivor, Formim)"
+        ]
+      }
+    },
+
+    
+      "technology": {
+        "title": "Teknologjia Dentare e Avancuar",
+        "description": "Përjetoni risitë më të fundit në përparimet dentare me teknologjinë tonë të avancuar. Nga imazhet precize dhe trajtimet me lazer deri te restaurimet në të njëjtën ditë, ne ofrojmë zgjidhje efikase, pa dhimbje dhe të personalizuara për një buzëqeshje më të shëndetshme dhe më të ndritshme.",
+        "services": [
+          {
+            "title": "Teknologjia e Imazhit të Avancuar",
+            "description": "Radiografi digjitale me rrezatime të ulëta dhe skanime 3D për diagnostifikime të sakta.",
+            "details": [
+              {"icon": "📷", "text": "Imazhe më të qarta"},
+              {"icon": "🔒", "text": "Më të sigurt"},
+              {"icon": "🩺", "text": "Zbulim i hershëm"},
+              {"icon": "🛠️", "text": "Planifikim i saktë i trajtimit"}
+            ]
+          },
+          {
+            "title": "Dentistria me Lazer",
+            "description": "Trajtimet pa dhimbje me teknologji lazer të avancuar për një shërim më të shpejtë.",
+            "details": [
+              {"icon": "😊", "text": "Më pak shqetësim"},
+              {"icon": "⏱️", "text": "Shërim më të shpejtë"},
+              {"icon": "💉", "text": "Trajtime të sakta"}
+            ]
+          },
+          {
+            "title": "Restaurime në të Njëjtën Ditë",
+            "description": "Korona, ura dhe veniera të personalizuara të realizuara në një vizitë me CEREC.",
+            "details": [
+              {"icon": "🦷", "text": "Takime të shpejta"},
+              {"icon": "💪", "text": "I qëndrueshëm"},
+              {"icon": "✨", "text": "Rezultate natyrale"}
+            ]
+          }
+        ]
+      }
+    
+    
+  
+  
+}

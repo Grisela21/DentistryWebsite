@@ -1,0 +1,98 @@
+{
+  "header": {
+    "home": "Home",
+    "about_us": "About Us",
+    "services": "Services",
+    "technology": "Technology",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "reviews": "Reviews",
+    "treatment_plan": "Treatment Plan"
+  },
+  "hero": {
+    "h1": "Your Perfect Smile Starts Here",
+    "h2": "Gentle Hands. Beautiful Smiles.",
+    "p": "We provide comprehensive dental care with a focus on quality and comfort.",
+    "cta": "Contact Us"
+  },
+
+  "about_us": {
+    "h1": "About Us",
+    "p1": "Welcome to our <span class='highlight'>dental clinic in Tirana, Albania</span> <ion-icon name='happy-outline'></ion-icon>. We specialize in providing <strong class='highlight'>world-class dental care</strong> for <span class='highlight'>international patients</span>, especially those traveling from <span class='highlight'>Italy</span>. Our mission is to ensure every patient receives <strong class='highlight'>high-quality</strong>, <strong class='highlight'>affordable treatments</strong> in a <strong class='highlight'>comfortable and modern environment</strong>.",
+    "p2": "Whether you're visiting Tirana for <span class='highlight'>tourism</span> or <span class='highlight'>dental care</span>, we're here to make your experience <strong class='highlight'>exceptional</strong>."
+  },
+  
+    "services": {
+      "title": "Explore Our Services",
+      "dental_cleaning": {
+        "title": "Dental Cleaning",
+        "description": "Keep your smile sparkling with our professional cleaning services. Remove stubborn plaque and enhance oral health effortlessly.",
+        "services_list": [
+          "🦷 Implantology",
+          "⚕️ Oral Surgery",
+          "💊 Therapy",
+          "✨ Aesthetic Dentistry",
+          "🦷 Orthodontics"
+        ]
+      },
+      "aesthetic": {
+        "title": "Aesthetic",
+        "description": "Perfectly aligned teeth are just a step away. Explore advanced aesthetic solutions designed with comfort and precision in mind.",
+        "services_list": [
+          "💆‍♀️ Facial Treatment",
+          "💪 Body Treatment",
+          "💉 Aesthetic Surgery"
+        ]
+      },
+      "general_surgery": {
+        "title": "General Surgery",
+        "description": "Don’t let unexpected dental issues ruin your day. Our team is here to provide immediate assistance, anytime you need it.",
+        "services_list": [
+          "🦷 Wisdom Tooth Extraction",
+          "🦷 Tooth Extraction (Damaged/Infected Teeth)",
+          "🦠 Oral Cyst Removal",
+          "🦴 Bone Grafting for Implants",
+          "🌿 Gum Surgery (Gum Recession, Contouring)"
+        ]
+      }
+    },
+    
+      "technology": {
+        "title": "Advanced Dental Technology",
+        "description": "Experience the latest in dental advancements with our state-of-the-art technology. From precise imaging and laser treatments to same-day restorations, we provide efficient, pain-free, and customized solutions for a healthier, brighter smile.",
+        "services": [
+          {
+            "title": "Advanced Imaging Technology",
+            "description": "Precise, low-radiation digital X-rays and 3D scans for accurate diagnoses.",
+            "details": [
+              {"icon": "📷", "text": "Clearer images"},
+              {"icon": "🔒", "text": "Safer"},
+              {"icon": "🩺", "text": "Early detection"},
+              {"icon": "🛠️", "text": "Precise treatment planning"}
+            ]
+          },
+          {
+            "title": "Laser Dentistry",
+            "description": "Pain-free treatments with advanced laser technology for faster healing.",
+            "details": [
+              {"icon": "😊", "text": "Less discomfort"},
+              {"icon": "⏱️", "text": "Faster recovery"},
+              {"icon": "💉", "text": "Precise treatments"}
+            ]
+          },
+          {
+            "title": "Same-Day Restorations",
+            "description": "Custom crowns, bridges, and veneers made in one visit with CEREC.",
+            "details": [
+              {"icon": "🦷", "text": "Quick appointments"},
+              {"icon": "💪", "text": "Durable"},
+              {"icon": "✨", "text": "Natural-looking results"}
+            ]
+          }
+        ]
+      }
+    
+    
+  
+  
+}

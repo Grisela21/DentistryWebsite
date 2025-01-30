@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Dental Practice</title>
+    <!--gOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400..700&family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- Add Font Awesome for Social Media Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- libriries for the icions of social media-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link to CSS file -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "0xp9E83g2PyV--Z8I",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <!-- Header / Navigation -->
+
+    <header>
+      <nav class="navbar">
+        <div class="content">
+          <!-- <div class="logo">
+            <img src="../images/logo (2).png" alt="Logo" />
+          </div> -->
+          <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="menu-list">
+            <!-- Add logo within the menu for small screens -->
+            <!-- <div class="menu-logo">
+              <img src="../images/logo.jpg" alt="Logo in Menu" />
+            </div> -->
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li><a href="#home" class="active">Home</a></li>
+            <li class="has-submenu">
+              <a href="#about-us" class="aus">About Us </a>
+              <span class="submenu-icon">+</span>
+              <!-- Submenu toggle icon -->
+
+              <ul class="submenu">
+                <li><a href="#career">Career</a></li>
+              </ul>
+            </li>
+            <li><a href="#services-display" class="srvc">Services</a></li>
+            <!-- <li class="has-submenu">
+              <a href="#doctorsprofiles">Dentistry</a>
+              <span class="submenu-icon">+</span>
+              <ul class="submenu">
+                <li><a href="#Implantology">Implantology </a></li>
+
+                <li><a href="#OralSurgery"> Oral Surgery </a></li>
+
+                <li><a href="#GeneralDentistry">General Dentistry </a></li>
+
+                <li><a href="#CosmeticDentistry">Cosmetic Dentistry </a></li>
+
+                <li><a href="#EmaxVeneers">Emax Veneers </a></li>
+
+                <li><a href="#Orthodontics">Orthodontics</a></li>
+              </ul>
+            </li> -->
+            <li class="has-submenu">
+              <a href="#technology" class="tech">Technology</a>
+              <span class="submenu-icon">+</span>
+              <ul class="submenu">
+                <li><a href="#Botox">Botox </a></li>
+
+                <li><a href="#Filler"> Filler </a></li>
+
+                <li><a href="#Mesotherapy">Mesotherapy </a></li>
+
+                <li>
+                  <a href="#PlateletRichPlasma(PRP)"
+                    >Platelet Rich Plasma (PRP)
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#DermapenMicro-needlingwithPRPandVitaminInfusion"
+                    >Dermapen Micro-needling with PRP and Vitamin Infusion
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#Stemcellmicro-needling"
+                    >Stem cell micro-needling
+                  </a>
+                </li>
+                <li><a href="#Peeling">Peeling </a></li>
+                <li><a href="#LemonBottle">Lemon Bottle</a></li>
+              </ul>
+            </li>
+            <li><a href="#image-gallery" class="gall">Gallery</a></li>
+            <li class="has-submenu">
+              <a href="#timeline" class="tplan">Treatment Plan </a>
+              <span class="submenu-icon">+</span>
+              <ul class="submenu">
+                <li><a href="#Blog">Blog </a></li>
+
+                <li><a href="#FAQ"> FAQ </a></li>
+
+                <li><a href="#PhotoGallery">Photo Gallery </a></li>
+
+                <li><a href="#VideoGallery">Video Gallery </a></li>
+              </ul>
+            </li>
+            <li><a href="#reviews-section" class="rev">Reviews</a></li>
+            <li><a href="#contactSection" class="con">Contact</a></li>
+
+            <!-- <div class="social-icons">
+              <a
+                href="https://www.facebook.com/yourpage"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.twitter.com/yourpage"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/yourpage"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/yourpage"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div> -->
+          </ul>
+          <!-- <div class="language-toggle">
+
+            <button id="toggle-language">
+              <span class="fi fi-gb"></span> 
+            </button>
+            
+
+          <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div> -->
+          <!-- add this to your header -->
+          <!-- <div id="google_translate_element"></div>  -->
+
+          <div class="lang-menu">
+            <div class="selected-lang" onclick="toggleLangMenu()">English</div>
+            <ul class="language-options">
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="it"
+                  onclick="loadLanguage('it')"
+                  >Italian</a
+                >
+              </li>
+              <!-- <li>
+          <a href="" class="en">English</a>
+      </li> -->
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="alb"
+                  onclick="loadLanguage('sq')"
+                  >Albanian</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content-container">
+        <!-- English content (visible by default) -->
+        <!-- <div class="content" id="content-en" style="display: block">
+          <h1
+            data-en="Welcome to our website"
+            data-it="Benvenuto sul nostro sito"
+          >
+            Welcome to our website
+          </h1>
+          <p
+            data-en="This is the default language: English."
+            data-it="Questa è la lingua predefinita: Italiano."
+          >
+            This is the default language: English.
+          </p>
+        </div> -->
+
+        <!-- Italian content (hidden by default) -->
+        <!-- <div class="content" id="content-it" style="display: none">
+          <h1
+            data-en="Welcome to our website"
+            data-it="Benvenuto sul nostro sito"
+          >
+            Benvenuto sul nostro sito
+          </h1>
+          <p
+            data-en="This is the default language: English."
+            data-it="Questa è la lingua predefinita: Italiano."
+          >
+            Questa è la lingua predefinita: Italiano.
+          </p>
+        </div> -->
+
+        <!-- Left Section -->
+        <div class="hero-text">
+          <h1 class="hero-h1">Your Perfect Smile Starts Here</h1>
+          <h2 class="hero-motto">Gentle Hands. Beautiful Smiles.</h2>
+
+          <p class="hero-paragraph">
+            We provide comprehensive dental care with a focus on quality and
+            comfort.
+          </p>
+          <a href="#contactSection" class="btn-primary hero-cta">Contact Us</a>
+        </div>
+
+        <!-- Right Section -->
+        <div class="hero-image-container">
+          <div class="spacer"></div>
+          <div class="image">
+            <img src="../images/homeImage.png" alt="Placeholder Image" />
+          </div>
+        </div>
+      </div>
+      <!--  <div class="curve"></div> -->
+    </section>
+    <!-- <div class="spacer layer3"></div> -->
+    <!-- Services Section -->
+    <section id="about-us" class="about-us">
+      <div class="background">
+        <img src="../images/plane2.PNG" alt="Plane" class="plane" />
+        <img src="../images/tooth2.png" alt="Tooth" class="tooth" />
+      </div>
+      <div class="glass-text">
+        <h1 class="about-us-h1">About Us</h1>
+        <p class="about-us-p1">
+          Welcome to our
+          <span class="highlight">dental clinic in Tirana, Albania</span>
+          <ion-icon name="happy-outline"></ion-icon>. We specialize in providing
+          <strong class="highlight">world-class dental care</strong> for
+          <span class="highlight">international patients</span>, especially
+          those traveling from <span class="highlight">Italy</span>. Our mission
+          is to ensure every patient receives
+          <strong class="highlight">high-quality</strong>,
+          <strong class="highlight">affordable treatments</strong> in a
+          <strong class="highlight">comfortable and modern environment</strong>.
+        </p>
+        <p class="about-us-p2">
+          Whether you're visiting Tirana for
+          <span class="highlight">tourism</span> or
+          <span class="highlight">dental care</span>, we're here to make your
+          experience <strong class="highlight">exceptional</strong>.
+        </p>
+      </div>
+    </section>
+    <!-- <div class="spacer layer4"></div> -->
+
+    <!--  <div class="spacer layer2 flip"></div> -->
+
+    <!-- <div class="spacer layer1"></div> -->
+    <!-- About Us Section -->
+    <!-- <section id="about" class="about-us">
+      <h2>About Us</h2>
+      <p>
+        We are dedicated to providing personalized dental care in a comfortable
+        and welcoming environment.
+      </p>
+      <img src="images/about.jpg" alt="About Us" />
+    </section>
+ -->
+    <section id="services-display" class="services-display">
+      <h1 class="section-title" id="services-title">Explore Our Services</h1>
+
+      <!-- Service Group 1 -->
+      <div class="service-group" id="dental-cleaning">
+        <div class="image">
+          <iframe
+            src="https://giphy.com/embed/g6Gw4eymzDQIep9CMS"
+            class="service-iframe"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+        <div class="content">
+          <h2 id="dental-cleaning-title">Dental Cleaning</h2>
+          <p id="dental-cleaning-description">
+            Keep your smile sparkling with our professional cleaning services.
+            Remove stubborn plaque and enhance oral health effortlessly.
+          </p>
+          <ul id="dental-cleaning-list">
+            <li><strong>🦷 Implantology</strong></li>
+            <li><strong>⚕️ Oral Surgery</strong></li>
+            <li><strong>💊 Therapy</strong></li>
+            <li><strong>✨ Aesthetic Dentistry</strong></li>
+            <li><strong>🦷 Orthodontics</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Service Group 2 -->
+      <div class="service-group reverse" id="aesthetic">
+        <div class="image">
+          <iframe
+            src="https://giphy.com/embed/wtTwdyxNovYStzcqrR"
+            class="service-iframe"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+        <div class="content">
+          <h2 id="aesthetic-title">Aesthetic</h2>
+          <p id="aesthetic-description">
+            Perfectly aligned teeth are just a step away. Explore advanced
+            aesthetic solutions designed with comfort and precision in mind.
+          </p>
+          <ul id="aesthetic-list">
+            <li><strong>💆‍♀️ Facial Treatment</strong></li>
+            <li><strong>💪 Body Treatment</strong></li>
+            <li><strong>💉 Aesthetic Surgery</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Service Group 3 -->
+      <div class="service-group" id="general-surgery">
+        <div class="image">
+          <iframe
+            src="https://giphy.com/embed/XaGZcpVk6vi6OpsDk3"
+            class="service-iframe"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+        <div class="content">
+          <h2 id="general-surgery-title">General Surgery</h2>
+          <p id="general-surgery-description">
+            Don’t let unexpected dental issues ruin your day. Our team is here
+            to provide immediate assistance, anytime you need it.
+          </p>
+          <ul id="general-surgery-list">
+            <li><strong>🦷 Wisdom Tooth Extraction</strong></li>
+            <li>
+              <strong>🦷 Tooth Extraction (Damaged/Infected Teeth)</strong>
+            </li>
+            <li><strong>🦠 Oral Cyst Removal</strong></li>
+            <li><strong>🦴 Bone Grafting for Implants</strong></li>
+            <li><strong>🌿 Gum Surgery (Gum Recession, Contouring)</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="technology" class="services">
+      <!--  <div class="buble-container">
+        <div class="bubbles">
+          <span style="--i: 11"></span>
+          <span style="--i: 12"></span>
+          <span style="--i: 24"></span>
+          <span style="--i: 10"></span>
+          <span style="--i: 14"></span>
+          <span style="--i: 23"></span>
+          <span style="--i: 18"></span>
+          <span style="--i: 16"></span>
+          <span style="--i: 19"></span>
+          <span style="--i: 22"></span>
+          <span style="--i: 25"></span>
+          <span style="--i: 18"></span>
+          <span style="--i: 21"></span>
+          <span style="--i: 15"></span>
+          <span style="--i: 13"></span>
+          <span style="--i: 26"></span>
+          <span style="--i: 17"></span>
+          <span style="--i: 13"></span>
+          <span style="--i: 28"></span>
+          <span style="--i: 11"></span>
+          <span style="--i: 12"></span>
+          <span style="--i: 24"></span>
+          <span style="--i: 10"></span>
+          <span style="--i: 14"></span>
+          <span style="--i: 23"></span>
+          <span style="--i: 18"></span>
+          <span style="--i: 16"></span>
+          <span style="--i: 19"></span>
+          <span style="--i: 22"></span>
+          <span style="--i: 25"></span>
+          <span style="--i: 18"></span>
+          <span style="--i: 21"></span>
+          <span style="--i: 15"></span>
+          <span style="--i: 13"></span>
+          <span style="--i: 26"></span>
+          <span style="--i: 17"></span>
+          <span style="--i: 13"></span>
+          <span style="--i: 28"></span>
+        </div>
+      </div> -->
+      <div class="overlay-container">
+        <div class="services-title">
+          <h2 class="section-title" data-i18n="technology.title">
+            Advanced Dental Technology
+          </h2>
+          <p class="section-paragraph" data-i18n="technology.description">
+            Experience the latest in dental advancements with our
+            state-of-the-art technology. From precise imaging and laser
+            treatments to same-day restorations, we provide efficient,
+            pain-free, and customized solutions for a healthier, brighter smile.
+          </p>
+        </div>
+        <div class="services-container">
+          <div class="maincontainer">
+            <div class="thecard" onclick="flipCard(event)">
+              <div class="thefront">
+                <div class="service-icon">
+                  <img src="../images/list icion.png" alt="Service Icon" />
+                </div>
+                <h1 data-i18n="technology.services[0].title">
+                  Advanced Imaging Technology
+                </h1>
+                <p data-i18n="technology.services[0].description">
+                  Precise, low-radiation digital X-rays and 3D scans for
+                  accurate diagnoses.
+                </p>
+                <p class="tap-to-flip" data-i18n="tap-to-flip">
+                  Tap to flip and see more!
+                </p>
+                <div class="flip-sign">↻</div>
+                <!-- Flip Icon -->
+                <!-- Flip Indicator -->
+              </div>
+
+              <div class="theback">
+                <div class="back-list-container">
+                  <!-- Implantology -->
+                  <div class="back-list-item">
+                    <div class="back-list-item-icon">📷</div>
+                    <div
+                      class="back-list-item-text"
+                      data-i18n="technology.services[0].flip_description[0].text"
+                    >
+                      Clearer images
+                    </div>
+                  </div>
+                  <!-- Oral Surgery -->
+                  <div class="back-list-item">
+                    <div class="back-list-item-icon">🔒</div>
+                    <div
+                      class="back-list-item-text"
+                      data-i18n="technology.services[0].flip_description[1].text"
+                    >
+                      Safer
+                    </div>
+                  </div>
+                  <!-- Therapy -->
+                  <div class="back-list-item">
+                    <div class="back-list-item-icon">🩺</div>
+                    <div
+                      class="back-list-item-text"
+                      data-i18n="technology.services[0].flip_description[2].text"
+                    >
+                      Earlydetection
+                    </div>
+                  </div>
+                  <!-- Aesthetic Dentistry -->
+                  <div class="back-list-item">
+                    <div class="back-list-item-icon">🛠️</div>
+                    <div
+                      class="back-list-item-text"
+                      data-i18n="technology.services[0].flip_description[3].text"
+                    >
+                      Precise treatment planning
+                    </div>
+                  </div>
+
+                  <!--                   <button class="back-list-container-button">Show More</button>
+ -->
+                </div>
+
+                <div class="flip-sign">↻</div>
+                <!-- Rotate Icon on Back -->
+              </div>
+            </div>
+          </div>
+
+          <div class="maincontainer">
+            <div class="thecard" onclick="flipCard(event)">
+              <div class="thefront">
+                <div class="service-icon">
+                  <img src="../images/list icion.png" alt="Service Icon" />
+                </div>
+                <h1 data-i18n="technology.services[1].title">
+                  Laser Dentistry
+                </h1>
+                <p data-i18n="technology.services[1].description">
+                  Pain-free treatments with advanced laser technology for faster
+                  healing.
+                </p>
+                <p class="tap-to-flip" data-i18n="tap-to-flip">
+                  Tap to flip and see more!
+                </p>
+                <div class="flip-sign">↻</div>
+                <!-- Flip Icon -->
+                <!-- Flip Indicator -->
+              </div>
+
+              <div class="theback">
+                <div class="back-list-container">
+                  <!-- Facial Treatment -->
+                  <div class="back-list-item">
+                    <div class="back-list-item-icon">😊</div>
+                    <div
+                      class="back-list-item-text"
+                      data-i18n="technology.services[1].flip_description[0].text"
+                    >
+                      Less discomfort
+                    </div>
+                  </div>
+                  <!-- Body Treatment -->
+                  <div class="back-list-item">
+                    <div class="back-list-item-icon">⏱️</div>
+                    <div
+                      class="back-list-item-text"
+                      data-i18n="technology.services[1].flip_description[1].text"
+                    >
+                      Faster recovery
+                    </div>
+                  </div>
+                  <!-- Aesthetic Surgery -->
+                  <div class="back-list-item">
+                    <div class="back-list-item-icon">💉</div>
+                    <div
+                      class="back-list-item-text"
+                      data-i18n="technology.services[1].flip_description[2].text"
+                    >
+                      Precise treatments
+                    </div>
+                  </div>
+                  <!--                   <button class="back-list-container-button">Show More</button>
+ -->
+                </div>
+
+                <div class="flip-sign">↻</div>
+                <!-- Rotate Icon on Back -->
+              </div>
+            </div>
+          </div>
+
+          <div class="maincontainer">
+            <div class="thecard" onclick="flipCard(event)">
+              <div class="thefront">
+                <div class="service-icon">
+                  <img src="../images/list icion.png" alt="Service Icon" />
+                </div>
+                <h1 data-i18n="technology.services[2].title">
+                  Same-Day Restorations
+                </h1>
+                <p data-i18n="technology.services[2].description">
+                  Custom crowns, bridges, and veneers made in one visit with
+                  CEREC.
+                </p>
+                <p class="tap-to-flip" data-i18n="tap-to-flip">
+                  Tap to flip and see more!
+                </p>
+                <div class="flip-sign">↻</div>
+                <!-- Flip Icon -->
+                <!-- Flip Indicator -->
+              </div>
+
+              <div class="theback">
+                <div class="back-list-container">
+                  <!-- Wisdom Tooth Extraction -->
+                  <div class="back-list-item">
+                    <div class="back-list-item-icon">🦷</div>
+                    <div
+                      class="back-list-item-text"
+                      data-i18n="technology.services[2].flip_description[0].text"
+                    >
+                      Quick appointments
+                    </div>
+                  </div>
+                  <!-- Tooth Extraction -->
+                  <div class="back-list-item">
+                    <div class="back-list-item-icon">💪</div>
+                    <div
+                      class="back-list-item-text"
+                      data-i18n="technology.services[2].flip_description[1].text"
+                    >
+                      Durable
+                    </div>
+                  </div>
+                  <!-- Oral Cyst Removal -->
+                  <div class="back-list-item">
+                    <div class="back-list-item-icon">✨</div>
+                    <div
+                      class="back-list-item-text"
+                      data-i18n="technology.services[2].flip_description[2].text"
+                    >
+                      Natural-looking results
+                    </div>
+                  </div>
+
+                  <!--                   <button class="back-list-container-button">Show More</button>
+ -->
+                </div>
+
+                <div class="flip-sign">↻</div>
+                <!-- Rotate Icon on Back -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="spacer layer3"></div>
+    <!--  <div class="spacer wave-layer"></div> -->
+
+    <!-- Team Section -->
+    <!--   <section id="team" class="team">
+      <h2>Meet Our Team</h2>
+      <div class="team-members">
+        <div class="team-member">
+          <img src="images/doctor1.jpg" alt="Doctor 1" />
+          <h3>Dr. John Doe</h3>
+          <p>Specialist in Cosmetic Dentistry</p>
+        </div>
+        <div class="team-member">
+          <img src="images/doctor2.jpg" alt="Doctor 2" />
+          <h3>Dr. Jane Smith</h3>
+          <p>Orthodontist</p>
+        </div>
+      
+      </div>
+    </section> -->
+
+    <section id="image-gallery" class="image-gallery">
+      <!-- Title Section -->
+      <div class="gallery-title">
+        <h2>Explore Our Stomatology Clinic</h2>
+        <p>
+          Take a look at our state-of-the-art clinic, designed to offer the best
+          care for your oral health.
+        </p>
+      </div>
+      <div class="image-gallery-cont">
+        <div class="image-space">
+          <span style="--i: 1"
+            ><img
+              src="../images/photoGallery/pexels-cedric-fauntleroy-4269363.jpg"
+              alt="img1"
+          /></span>
+          <span style="--i: 2"
+            ><img
+              src="../images/photoGallery/pexels-cottonbro-6502161.jpg"
+              alt="img2"
+          /></span>
+          <span style="--i: 3"
+            ><img
+              src="../images/photoGallery/pexels-cottonbro-6502162.jpg"
+              alt="img3"
+          /></span>
+          <span style="--i: 4"
+            ><img
+              src="../images/photoGallery/pexels-fr3nks-287237.jpg"
+              alt="img4"
+          /></span>
+          <span style="--i: 5"
+            ><img
+              src="../images/photoGallery/pexels-fr3nks-305567.jpg"
+              alt="img5"
+          /></span>
+          <span style="--i: 6"
+            ><img
+              src="../images/photoGallery/pexels-mm-dental-56682202-8260439.jpg"
+              alt="img6"
+          /></span>
+          <span style="--i: 7"
+            ><img
+              src="../images/photoGallery/pexels-mm-dental-56682202-8260439.jpg"
+              alt="img7"
+          /></span>
+          <span style="--i: 8"
+            ><img
+              src="../images/photoGallery/pexels-pavel-danilyuk-6812479.jpg"
+              alt="img8"
+          /></span>
+        </div>
+        <div class="img-btns">
+          <div class="img-btn prev"></div>
+          <div class="img-btn next"></div>
+        </div>
+      </div>
+      <script>
+        let prev = document.querySelector(".prev");
+        let next = document.querySelector(".next");
+        let imageSpace = document.querySelector(".image-space");
+
+        console.log(prev, imageSpace); // Check if elements are found
+
+        let degrees = 0;
+
+        if (prev) {
+          prev.addEventListener("click", function () {
+            console.log("Button clicked"); // Debug message
+            degrees += 45;
+            imageSpace.style.transform = `perspective(1000px) rotateY(${degrees}deg)`;
+          });
+        } else {
+          console.error("prev button not found");
+        }
+
+        if (next) {
+          next.addEventListener("click", function () {
+            console.log("Button clicked"); // Debug message
+            degrees -= 45;
+            imageSpace.style.transform = `perspective(1000px) rotateY(${degrees}deg)`;
+          });
+        } else {
+          console.error("prev button not found");
+        }
+      </script>
+    </section>
+
+    <section id="timeline" class="timeline">
+      <div class="timeline-container" id="timeline-1">
+        <div class="timeline-header">
+          <h2 class="timeline-header__title">A Streamlined Treatment Plan</h2>
+          <h3 class="timeline-header__subtitle">
+            What to Expect From Our Team We've carefully planned every aspect of
+            your visit to ensure a comfortable and seamless experience.
+          </h3>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item" data-text="Treatment Plan">
+            <div class="timeline_content">
+              <img
+                class="timeline_img"
+                src="../images/timeline_images/11.jpg"
+              />
+              <h2 class="timeline_content-title">Initial Contact</h2>
+              <p class="timeline_content-desc">
+                You can reach us by phone, email, or through our online contact
+                form. Our friendly staff will assist you with any questions and
+                help you schedule your first consultation. Or you can come
+                directly to our clinic to schedule your appointment in person.
+                Our team will be happy to assist you with immediate registration
+                and appointment booking.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-text="Treatment Plan">
+            <div class="timeline_content">
+              <img
+                class="timeline_img"
+                src="../images/timeline_images/22.jpg"
+              />
+              <h2 class="timeline_content-title">Schedule Appointment</h2>
+              <p class="timeline_content-desc">
+                Once you’ve made your initial contact, we will schedule your
+                first consultation at your convenience. You will receive a
+                confirmation email or message with your appointment details.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-text="Treatment Plan">
+            <div class="timeline_content">
+              <img
+                class="timeline_img"
+                src="../images/timeline_images/33.jpg"
+              />
+              <h2 class="timeline_content-title">Consultation</h2>
+              <p class="timeline_content-desc">
+                Meet our dental professionals who will perform a comprehensive
+                evaluation. Discuss any concerns you have about your dental
+                health. Receive an explanation of your treatment options and the
+                best path forward for your needs. A treatment plan will be
+                customized for you, including cost and estimated timeline.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-text="Treatment Plan">
+            <div class="timeline_content">
+              <img
+                class="timeline_img"
+                src="../images/timeline_images/55.jpg"
+              />
+              <h2 class="timeline_content-title">Treatment Plan Review</h2>
+              <p class="timeline_content-desc">
+                We’ll walk you through the details of your treatment plan,
+                ensuring that you understand all steps, costs, and expected
+                outcomes. Any questions or concerns you may have will be
+                addressed thoroughly.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-text="Treatment Plan">
+            <div class="timeline_content">
+              <img
+                class="timeline_img"
+                src="../images/timeline_images/44.jpg"
+              />
+              <h2 class="timeline_content-title">Scheduling Treatment</h2>
+              <p class="timeline_content-desc">
+                Once you approve your treatment plan, we’ll schedule the
+                necessary procedures. Our team will work with your availability
+                and provide reminders as your appointment approaches.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-text="Treatment Plan">
+            <div class="timeline_content">
+              <img
+                class="timeline_img"
+                src="../images/timeline_images/77.jpg"
+              />
+              <h2 class="timeline_content-title">Treatment Day</h2>
+              <p class="timeline_content-desc">
+                Arrive at the clinic and check in with our receptionist. Our
+                dental team will guide you through the necessary steps and
+                ensure your comfort throughout the procedure. Treatment will be
+                performed with precision and care to achieve the best outcome.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-text="Treatment Plan">
+            <div class="timeline_content">
+              <img
+                class="timeline_img"
+                src="../images/timeline_images/66.jpg"
+              />
+              <h2 class="timeline_content-title">Post-Treatment Care</h2>
+              <p class="timeline_content-desc">
+                After the treatment, we’ll give you specific instructions for
+                post-care to ensure the healing process goes smoothly. Any
+                necessary follow-up appointments will be scheduled to monitor
+                your recovery.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+      <script>
+        (function ($) {
+          $.fn.timeline = function () {
+            var selectors = {
+              id: $(this),
+              item: $(this).find(".timeline-item"),
+              activeClass: "timeline-item--active",
+              img: ".timeline_img",
+            };
+
+            // Ensure there are timeline items to work with
+            if (selectors.item.length > 0) {
+              // Add 'active' class to the first item
+              selectors.item.eq(0).addClass(selectors.activeClass);
+
+              // Set the background image of the timeline container to the image of the first item
+              var firstImageSrc = selectors.item
+                .first()
+                .find(selectors.img)
+                .attr("src");
+              if (firstImageSrc) {
+                selectors.id.css(
+                  "background-image",
+                  "url(" + firstImageSrc + ")"
+                );
+              }
+
+              var itemLength = selectors.item.length;
+
+              $(window).on(
+                "scroll",
+                debounce(function () {
+                  var pos = $(this).scrollTop();
+
+                  selectors.item.each(function (i) {
+                    var min = $(this).offset().top;
+                    var max = $(this).height() + $(this).offset().top;
+
+                    // Check if the last item is in view
+                    if (
+                      i == itemLength - 2 &&
+                      pos > min + $(this).height() / 2
+                    ) {
+                      selectors.item.removeClass(selectors.activeClass);
+                      var lastImageSrc = selectors.item
+                        .last()
+                        .find(selectors.img)
+                        .attr("src");
+                      if (lastImageSrc) {
+                        selectors.id.css(
+                          "background-image",
+                          "url(" + lastImageSrc + ")"
+                        );
+                      }
+                      selectors.item.last().addClass(selectors.activeClass);
+                    }
+                    // Handle active class and background image change for each item
+                    else if (pos <= max - 40 && pos >= min) {
+                      var currentImageSrc = $(this)
+                        .find(selectors.img)
+                        .attr("src");
+                      if (currentImageSrc) {
+                        selectors.id.css(
+                          "background-image",
+                          "url(" + currentImageSrc + ")"
+                        );
+                      }
+                      selectors.item.removeClass(selectors.activeClass);
+                      $(this).addClass(selectors.activeClass);
+                    }
+                  });
+                }, 0)
+              ); // Debounce function for smooth scrolling
+            }
+          };
+        })(jQuery);
+
+        // Initialize the timeline when the document is ready
+        $(document).ready(function () {
+          $("#timeline-1").timeline();
+        });
+
+        // Debounce function for optimizing scroll event handling
+        function debounce(func, wait) {
+          var timeout;
+          return function () {
+            var context = this,
+              args = arguments;
+            clearTimeout(timeout);
+            timeout = setTimeout(function () {
+              func.apply(context, args);
+            }, wait);
+          };
+        }
+      </script>
+    </section>
+
+    <!-- <div class="spacer layer4"></div> -->
+    <!--     <div class="spacer layer1"></div>
+ -->
+    <!-- Testimonials Section -->
+    <!-- <section id="testimonials" class="testimonials">
+      <h2>What Our Patients Say</h2>
+      <div class="testimonials-container">
+        <div class="testimonial">
+          <p>"The staff is amazing and my smile has never looked better!"</p>
+          <h3>- Patient Name</h3>
+        </div>
+        <div class="testimonial">
+          <p>"The best dental experience I've ever had!"</p>
+          <h3>- Patient Name</h3>
+        </div>
+        Add more testimonials as needed -->
+    <!-- </div>
+    </section> -->
+    <!--     <div class="spacer layer2"></div>
+ -->
+    <!-- Contact Section -->
+    <!-- <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <p>For appointments or inquiries, feel free to get in touch with us.</p>
+      <form action="submit_form.php" method="post">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section> -->
+
+    <section id="reviews-section" class="reviews-section">
+      <div class="left-section">
+        <h2>Kind Words<br />from Our Patients</h2>
+        <a href="https://www.google.com" target="_blank" class="reviews-link"
+          >300+ 5-Star Reviews »</a
+        >
+        <div class="comments-wrapper">
+          <button class="arrow left-arrow">&lt;</button>
+          <div class="comments">
+            <div class="comment active">
+              <span class="quote-symbol">“</span>
+              <p>Fantastic service and friendly staff! Highly recommended.</p>
+              <span class="author">- John Doe</span>
+            </div>
+            <div class="comment">
+              <span class="quote-symbol">“</span>
+              <p>Amazing experience, my teeth have never felt better!</p>
+              <span class="author">- Jane Smith</span>
+            </div>
+            <div class="comment">
+              <span class="quote-symbol">“</span>
+              <p>
+                Professional and caring team, they really make you feel at ease.
+              </p>
+              <span class="author">- Mike Brown</span>
+            </div>
+          </div>
+          <button class="arrow right-arrow">&gt;</button>
+        </div>
+      </div>
+      <div class="right-section">
+        <!-- Adding the first GIF -->
+        <div class="gif-container">
+          <iframe
+            src="https://giphy.com/embed/lQPVvVLvhg2NGwlejL"
+            width="480"
+            height="480"
+            frameborder="0"
+            class="giphy-embed"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <!-- Adding the second GIF below the first one -->
+        <div class="gif-container">
+          <iframe
+            src="https://giphy.com/embed/fZ2a8RO6CQxxVMt4lL"
+            width="480"
+            height="271"
+            frameborder="0"
+            class="giphy-embed"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <script>
+        const comments = document.querySelectorAll(".comment");
+        const leftArrow = document.querySelector(".left-arrow");
+        const rightArrow = document.querySelector(".right-arrow");
+        let currentIndex = 0;
+
+        function showComment(index) {
+          comments.forEach((comment, i) => {
+            comment.classList.toggle("active", i === index);
+          });
+        }
+
+        leftArrow.addEventListener("click", () => {
+          currentIndex =
+            currentIndex > 0 ? currentIndex - 1 : comments.length - 1;
+          showComment(currentIndex);
+        });
+
+        rightArrow.addEventListener("click", () => {
+          currentIndex =
+            currentIndex < comments.length - 1 ? currentIndex + 1 : 0;
+          showComment(currentIndex);
+        });
+
+        showComment(currentIndex);
+      </script>
+    </section>
+
+    <section id="contactSection" class="contactSection">
+      <div class="contactUs">
+        <div class="title">
+          <h2>Get in Touch</h2>
+        </div>
+        <div class="box">
+          <!--Form-->
+
+          <div class="contact form">
+            <h3>Send a Message</h3>
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input
+                type="hidden"
+                name="access_key"
+                value="d4479506-4d71-4a1c-a6b3-b798bdc3334e"
+              />
+              <div class="formBox">
+                <div class="row50">
+                  <div class="inputBox">
+                    <span>First Name</span>
+
+                    <input
+                      type="text"
+                      placeholder="Alessandro"
+                      id="name"
+                      name="name"
+                    />
+                  </div>
+                  <div class="inputBox">
+                    <span>Last Name</span>
+                    <input
+                      type="text"
+                      placeholder="Doe"
+                      id="surname"
+                      name="surname"
+                    />
+                  </div>
+                </div>
+
+                <div class="row50">
+                  <div class="inputBox">
+                    <span>Email</span>
+                    <input
+                      type="text"
+                      placeholder="alessandrodoe@gmail.com"
+                      id="email"
+                      name="email"
+                    />
+                  </div>
+                  <div class="inputBox">
+                    <span>Mobile</span>
+                    <input
+                      type="text"
+                      placeholder="+39 2282890893"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                    />
+                  </div>
+                </div>
+
+                <div class="row100">
+                  <div class="inputBox">
+                    <span>Message</span>
+                    <textarea
+                      placeholder="Write your message here..."
+                      id="message"
+                      name="message"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="row100">
+                  <div class="inputBox">
+                    <input type="submit" value="Send" />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="contact info">
+            <h3>Contact Info</h3>
+            <div class="infoBox">
+              <div>
+                <span><ion-icon name="location"></ion-icon></span>
+                <p>
+                  Komuna e Parisit <br />
+                  Tirane
+                </p>
+              </div>
+              <div>
+                <span><ion-icon name="mail"></ion-icon></span>
+                <a href="mailto:grisela.daja@gmail.com"
+                  >grisela.daja@gmail.com</a
+                >
+              </div>
+              <div>
+                <span><ion-icon name="call"></ion-icon></span>
+                <a href="tel:+355 698767890">+355 69 87 67 890</a>
+              </div>
+              <ul class="sci">
+                <li>
+                  <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                </li>
+                <li>
+                  <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                </li>
+                <li>
+                  <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </li>
+                <li>
+                  <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="contact map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5993.362630054161!2d19.805624499999997!3d41.31579595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13503056051a2295%3A0xae080d6a1ef381e!2sKomuna%20e%20Parisit%2C%20Tiran%C3%AB%2C%20Albania!5e0!3m2!1sen!2sit!4v1733672311556!5m2!1sen!2sit"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      ></script>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 Your Dental Practice. All rights reserved.</p>
+        <ul class="social-links">
+          <li>
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          </li>
+          <!-- Add more social icons as needed -->
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Link to JavaScript file -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script type="text/javascript" src="../js/script.js" defer></script>-->
+
+    <script type="text/javascript" src="../js/script.js" defer></script>
+    <!-- <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script> -->
+  </body>
+</html>
