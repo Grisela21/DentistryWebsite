@@ -57,40 +57,115 @@
     },
 
     
-      "technology": {
-        "title": "Teknologjia Dentare e Avancuar",
-        "description": "Përjetoni risitë më të fundit në përparimet dentare me teknologjinë tonë të avancuar. Nga imazhet precize dhe trajtimet me lazer deri te restaurimet në të njëjtën ditë, ne ofrojmë zgjidhje efikase, pa dhimbje dhe të personalizuara për një buzëqeshje më të shëndetshme dhe më të ndritshme.",
-        "services": [
-          {
-            "title": "Teknologjia e Imazhit të Avancuar",
-            "description": "Radiografi digjitale me rrezatime të ulëta dhe skanime 3D për diagnostifikime të sakta.",
-            "details": [
-              {"icon": "📷", "text": "Imazhe më të qarta"},
-              {"icon": "🔒", "text": "Më të sigurt"},
-              {"icon": "🩺", "text": "Zbulim i hershëm"},
-              {"icon": "🛠️", "text": "Planifikim i saktë i trajtimit"}
-            ]
+    "technology": {
+  "title": "Teknologji e Avancuar Dentare",
+  "description": "Përjetoni të fundit në avancimet dentare me teknologjinë tonë të fundit. Nga imazhet e sakta dhe trajtimet me lazer deri te restaurimet e njëjtditëshme, ne ofrojmë zgjidhje efikase, pa dhimbje dhe të personalizuara për një buzëqeshje më të shëndetshme dhe më të ndritshme.",
+  "tap-to-flip": "Prekni për të kthyer dhe për të parë më shumë!",
+  "services": [
+    {
+      "title": "Teknologji e Avancuar e Imazhit",
+      "description": "Rreze X dixhitale me rrezatim të ulët dhe skanime 3D për diagnoza të sakta.",
+      "flip_description": [
+        { "text": "Imazhe më të qarta" },
+        { "text": "Më e sigurt" },
+        { "text": "Zbulim i hershëm" },
+        { "text": "Planifikim i saktë i trajtimit" }
+      ]
+    },
+    {
+      "title": "Stomatologji me Lazer",
+      "description": "Trajtime pa dhimbje me teknologji lazer të avancuar për shërim më të shpejtë.",
+      "flip_description": [
+        { "text": "Më pak shqetësim" },
+        { "text": "Shërim më i shpejtë" },
+        { "text": "Trajtime të sakta" }
+      ]
+    },
+    {
+      "title": "Restaurime të Njëjtditëshme",
+      "description": "Kurora, ura dhe veneerë të personalizuar të bëra në një vizitë me CEREC.",
+      "flip_description": [
+        { "text": "Takime të shpejta" },
+        { "text": "E qëndrueshme" },
+        { "text": "Rezultate natyrale" }
+      ]
+    }
+  ]
+},
+      "gallery": {
+        "title": "Eksploroni klinikën tonë dentare",
+        "description": "Hidhini një sy klinikës sonë moderne, e krijuar për të ofruar kujdesin më të mirë për shëndetin tuaj oral."
           },
-          {
-            "title": "Dentistria me Lazer",
-            "description": "Trajtimet pa dhimbje me teknologji lazer të avancuar për një shërim më të shpejtë.",
-            "details": [
-              {"icon": "😊", "text": "Më pak shqetësim"},
-              {"icon": "⏱️", "text": "Shërim më të shpejtë"},
-              {"icon": "💉", "text": "Trajtime të sakta"}
-            ]
-          },
-          {
-            "title": "Restaurime në të Njëjtën Ditë",
-            "description": "Korona, ura dhe veniera të personalizuara të realizuara në një vizitë me CEREC.",
-            "details": [
-              {"icon": "🦷", "text": "Takime të shpejta"},
-              {"icon": "💪", "text": "I qëndrueshëm"},
-              {"icon": "✨", "text": "Rezultate natyrale"}
-            ]
-          }
-        ]
-      }
+          "timeline": {
+  "title": "Një Plan Trajtimi i Efikas",
+  "subtitle": "Çfarë Të Prisni Nga Ekipi Jonë Ne kemi planifikuar me kujdes çdo aspekt të vizitës tuaj për të siguruar një përvojë të rehatshme dhe pa probleme.",
+  "steps": [
+    {
+      "title": "Kontakt Fillestar",
+      "description": "Mund të na kontaktoni me telefon, email ose përmes formularit tonë të kontaktit në internet. Stafi ynë miqësor do t'ju ndihmojë me çdo pyetje dhe do t'ju ndihmojë të planifikoni konsultën tuaj të parë. Ose mund të vini direkt në klinikën tonë për të planifikuar takimin tuaj personalisht. Ekipi ynë do të jetë i lumtur t'ju asistojë me regjistrimin e menjëhershëm dhe rezervimin e takimit."
+    },
+    {
+      "title": "Planifikimi i Takimit",
+      "description": "Pasi të keni marrë kontaktin fillestar, ne do të planifikojmë konsultën tuaj të parë sipas disponimit tuaj. Do të merrni një email ose mesazh konfirmimi me detajet e takimit tuaj."
+    },
+    {
+      "title": "Konsultimi",
+      "description": "Takoni profesionistët tanë dentalë të cilët do të kryejnë një vlerësim të plotë. Diskutoni çdo shqetësim që keni për shëndetin tuaj dental. Merrni një shpjegim të opsioneve të trajtimit dhe rrugën më të mirë për nevojat tuaja. Një plan trajtimi i personalizuar do të krijohet për ju, duke përfshirë koston dhe afatin e vlerësuar."
+    },
+    {
+      "title": "Rishikimi i Planit të Trajtimit",
+      "description": "Ne do t'ju udhëzojmë nëpër detajet e planit tuaj të trajtimit, duke u siguruar që të kuptoni të gjitha hapat, kostot dhe rezultatet e pritura. Çdo pyetje ose shqetësim do të trajtohet në mënyrë të plotë."
+    },
+    {
+      "title": "Planifikimi i Trajtimit",
+      "description": "Pasi të keni miratuar planin e trajtimit, ne do të planifikojmë procedurat e nevojshme. Ekipi ynë do të punojë sipas disponimit tuaj dhe do t'ju dërgojë kujtime ndërsa afrohet takimi juaj."
+    },
+    {
+      "title": "Dita e Trajtimit",
+      "description": "Arritni në klinikë dhe regjistrohuni te recepsioni. Ekipi ynë dental do t'ju udhëzojë nëpër hapat e nevojshëm dhe do të sigurojë rehatinë tuaj gjatë procedurës. Trajtimi do të kryhet me saktësi dhe kujdes për të arritur rezultatin më të mirë."
+    },
+    {
+      "title": "Kujdesi Pas Trajtimit",
+      "description": "Pas trajtimit, ne do t'ju japim udhëzime specifike për kujdesin pas trajtimit për të siguruar një proces shërimi pa probleme. Çdo takim i nevojshëm pas trajtimit do të planifikohet për të monitoruar shërimin tuaj."
+    }
+  ]
+},
+"reviews": {
+  "title": "Fjalë të Mira nga Pacientët Tanë",
+  "reviews_link": "300+ Vlerësime 5-Yje »",
+  "comments": [
+    {
+      "text": "Shërbim fantastik dhe staf miqësor! Rekomandohet shumë.",
+      "author": "- John Doe"
+    },
+    {
+      "text": "Përvojë e mahnitshme, dhëmbët e mi nuk kanë ndier kurrë më mirë!",
+      "author": "- Jane Smith"
+    },
+    {
+      "text": "Ekip profesional dhe i kujdesshëm, ata vërtet të bëjnë të ndjehesh rehat.",
+      "author": "- Mike Brown"
+    }
+  ]
+},
+"contact": {
+  "title": "Na Kontaktoni",
+  "form": {
+    "heading": "Dërgo një Mesazh",
+    "firstName": "Emri",
+    "lastName": "Mbiemri",
+    "email": "Email",
+    "phone": "Telefoni",
+    "message": "Mesazhi",
+    "sendButton": "Dërgo"
+  },
+  "info": {
+    "heading": "Informacion Kontakti",
+    "address": "Komuna e Parisit<br>Tiranë",
+    "email": "grisela.daja@gmail.com",
+    "phone": "+355 69 87 67 890"
+  }
+}
     
     
   

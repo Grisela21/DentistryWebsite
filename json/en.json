@@ -57,40 +57,116 @@
       }
     },
     
-      "technology": {
-        "title": "Advanced Dental Technology",
-        "description": "Experience the latest in dental advancements with our state-of-the-art technology. From precise imaging and laser treatments to same-day restorations, we provide efficient, pain-free, and customized solutions for a healthier, brighter smile.",
-        "services": [
-          {
-            "title": "Advanced Imaging Technology",
-            "description": "Precise, low-radiation digital X-rays and 3D scans for accurate diagnoses.",
-            "details": [
-              {"icon": "📷", "text": "Clearer images"},
-              {"icon": "🔒", "text": "Safer"},
-              {"icon": "🩺", "text": "Early detection"},
-              {"icon": "🛠️", "text": "Precise treatment planning"}
-            ]
-          },
-          {
-            "title": "Laser Dentistry",
-            "description": "Pain-free treatments with advanced laser technology for faster healing.",
-            "details": [
-              {"icon": "😊", "text": "Less discomfort"},
-              {"icon": "⏱️", "text": "Faster recovery"},
-              {"icon": "💉", "text": "Precise treatments"}
-            ]
-          },
-          {
-            "title": "Same-Day Restorations",
-            "description": "Custom crowns, bridges, and veneers made in one visit with CEREC.",
-            "details": [
-              {"icon": "🦷", "text": "Quick appointments"},
-              {"icon": "💪", "text": "Durable"},
-              {"icon": "✨", "text": "Natural-looking results"}
-            ]
-          }
-        ]
-      }
+   "technology": {
+  "title": "Advanced Dental Technology",
+  "description": "Experience the latest in dental advancements with our state-of-the-art technology. From precise imaging and laser treatments to same-day restorations, we provide efficient, pain-free, and customized solutions for a healthier, brighter smile.",
+  "tap-to-flip": "Tap to flip and see more!",
+  "services": [
+    {
+      "title": "Advanced Imaging Technology",
+      "description": "Precise, low-radiation digital X-rays and 3D scans for accurate diagnoses.",
+      "flip_description": [
+        { "text": "Clearer images" },
+        { "text": "Safer" },
+        { "text": "Early detection" },
+        { "text": "Precise treatment planning" }
+      ]
+    },
+    {
+      "title": "Laser Dentistry",
+      "description": "Pain-free treatments with advanced laser technology for faster healing.",
+      "flip_description": [
+        { "text": "Less discomfort" },
+        { "text": "Faster recovery" },
+        { "text": "Precise treatments" }
+      ]
+    },
+    {
+      "title": "Same-Day Restorations",
+      "description": "Custom crowns, bridges, and veneers made in one visit with CEREC.",
+      "flip_description": [
+        { "text": "Quick appointments" },
+        { "text": "Durable" },
+        { "text": "Natural-looking results" }
+      ]
+    }
+  ]
+},
+      "gallery": {
+    "title": "Explore Our Stomatology Clinic",
+    "description": "Take a look at our state-of-the-art clinic, designed to offer the best care for your oral health."
+      },
+      "timeline": {
+  "title": "A Streamlined Treatment Plan",
+  "subtitle": "What to Expect From Our Team We've carefully planned every aspect of your visit to ensure a comfortable and seamless experience.",
+  "steps": [
+    {
+      "title": "Initial Contact",
+      "description": "You can reach us by phone, email, or through our online contact form. Our friendly staff will assist you with any questions and help you schedule your first consultation. Or you can come directly to our clinic to schedule your appointment in person. Our team will be happy to assist you with immediate registration and appointment booking."
+    },
+    {
+      "title": "Schedule Appointment",
+      "description": "Once you’ve made your initial contact, we will schedule your first consultation at your convenience. You will receive a confirmation email or message with your appointment details."
+    },
+    {
+      "title": "Consultation",
+      "description": "Meet our dental professionals who will perform a comprehensive evaluation. Discuss any concerns you have about your dental health. Receive an explanation of your treatment options and the best path forward for your needs. A treatment plan will be customized for you, including cost and estimated timeline."
+    },
+    {
+      "title": "Treatment Plan Review",
+      "description": "We’ll walk you through the details of your treatment plan, ensuring that you understand all steps, costs, and expected outcomes. Any questions or concerns you may have will be addressed thoroughly."
+    },
+    {
+      "title": "Scheduling Treatment",
+      "description": "Once you approve your treatment plan, we’ll schedule the necessary procedures. Our team will work with your availability and provide reminders as your appointment approaches."
+    },
+    {
+      "title": "Treatment Day",
+      "description": "Arrive at the clinic and check in with our receptionist. Our dental team will guide you through the necessary steps and ensure your comfort throughout the procedure. Treatment will be performed with precision and care to achieve the best outcome."
+    },
+    {
+      "title": "Post-Treatment Care",
+      "description": "After the treatment, we’ll give you specific instructions for post-care to ensure the healing process goes smoothly. Any necessary follow-up appointments will be scheduled to monitor your recovery."
+    }
+  ]
+},
+"reviews": {
+  "title": "Kind Words from Our Patients",
+  "reviews_link": "300+ 5-Star Reviews »",
+  "comments": [
+    {
+      "text": "Fantastic service and friendly staff! Highly recommended.",
+      "author": "- John Doe"
+    },
+    {
+      "text": "Amazing experience, my teeth have never felt better!",
+      "author": "- Jane Smith"
+    },
+    {
+      "text": "Professional and caring team, they really make you feel at ease.",
+      "author": "- Mike Brown"
+    }
+  ]
+},
+"contact": {
+  "title": "Get in Touch",
+  "form": {
+    "heading": "Send a Message",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Mobile",
+    "message": "Message",
+    "sendButton": "Send"
+  },
+  "info": {
+    "heading": "Contact Info",
+    "address": "Komuna e Parisit<br>Tirane",
+    "email": "grisela.daja@gmail.com",
+    "phone": "+355 69 87 67 890"
+  }
+}
+
     
     
   

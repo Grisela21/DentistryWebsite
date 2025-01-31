@@ -56,40 +56,116 @@
       }
     },
     
-      "technology": {
-        "title": "Tecnologia Dentale Avanzata",
-        "description": "Sperimenta le ultime innovazioni dentistiche con la nostra tecnologia all'avanguardia. Da immagini precise e trattamenti al laser a restauri in giornata, offriamo soluzioni efficienti, senza dolore e personalizzate per un sorriso più sano e luminoso.",
-        "services": [
-          {
-            "title": "Tecnologia di Imaging Avanzato",
-            "description": "Radiografie digitali a bassa radiazione e scansioni 3D per diagnosi precise.",
-            "details": [
-              {"icon": "📷", "text": "Immagini più chiare"},
-              {"icon": "🔒", "text": "Più sicuro"},
-              {"icon": "🩺", "text": "Rilevamento precoce"},
-              {"icon": "🛠️", "text": "Pianificazione del trattamento precisa"}
-            ]
-          },
-          {
-            "title": "Odontoiatria Laser",
-            "description": "Trattamenti senza dolore con tecnologia laser avanzata per una guarigione più rapida.",
-            "details": [
-              {"icon": "😊", "text": "Meno disagio"},
-              {"icon": "⏱️", "text": "Recupero più veloce"},
-              {"icon": "💉", "text": "Trattamenti precisi"}
-            ]
-          },
-          {
-            "title": "Restauri in Giornata",
-            "description": "Corone, ponti e faccette personalizzati realizzati in una sola visita con CEREC.",
-            "details": [
-              {"icon": "🦷", "text": "Appuntamenti rapidi"},
-              {"icon": "💪", "text": "Durevole"},
-              {"icon": "✨", "text": "Risultati dall'aspetto naturale"}
-            ]
-          }
-        ]
-      }
+   "technology": {
+  "title": "Tecnologia Dentistica Avanzata",
+  "description": "Sperimenta le ultime innovazioni nel campo dentistico con la nostra tecnologia all'avanguardia. Dalle immagini precise e trattamenti laser alle riparazioni in giornata, offriamo soluzioni efficienti, indolori e personalizzate per un sorriso più sano e luminoso.",
+  "tap-to-flip": "Tocca per capovolgere e vedere di più!",
+  "services": [
+    {
+      "title": "Tecnologia di Imaging Avanzata",
+      "description": "Raggi X digitali a bassa radiazione e scansioni 3D per diagnosi accurate.",
+      "flip_description": [
+        { "text": "Immagini più chiare" },
+        { "text": "Più sicuro" },
+        { "text": "Rilevamento precoce" },
+        { "text": "Pianificazione precisa del trattamento" }
+      ]
+    },
+    {
+      "title": "Odontoiatria Laser",
+      "description": "Trattamenti indolori con tecnologia laser avanzata per una guarigione più rapida.",
+      "flip_description": [
+        { "text": "Meno disagio" },
+        { "text": "Recupero più veloce" },
+        { "text": "Trattamenti precisi" }
+      ]
+    },
+    {
+      "title": "Riparazioni in Giornata",
+      "description": "Corone, ponti e faccette personalizzati realizzati in una sola visita con CEREC.",
+      "flip_description": [
+        { "text": "Appuntamenti rapidi" },
+        { "text": "Resistente" },
+        { "text": "Risultati naturali" }
+      ]
+    }
+  ]
+},
+      "gallery": {
+    "title": "Esplora la nostra clinica odontoiatrica",
+    "description": "Date un'occhiata alla nostra clinica all'avanguardia, progettata per offrirvi la migliore cura per la vostra salute orale."
+      },
+      "timeline": {
+  "title": "Un Piano di Trattamento Efficiente",
+  "subtitle": "Cosa Aspettarsi dal Nostro Team Abbiamo pianificato con cura ogni aspetto della tua visita per garantire un'esperienza confortevole e senza intoppi.",
+  "steps": [
+    {
+      "title": "Contatto Iniziale",
+      "description": "Puoi contattarci telefonicamente, via email o tramite il nostro modulo di contatto online. Il nostro personale amichevole ti assisterà con qualsiasi domanda e ti aiuterà a programmare la tua prima consulenza. Oppure puoi venire direttamente nella nostra clinica per fissare il tuo appuntamento di persona. Il nostro team sarà felice di assisterti con la registrazione immediata e la prenotazione dell'appuntamento."
+    },
+    {
+      "title": "Pianificazione dell'Appuntamento",
+      "description": "Dopo aver preso il primo contatto, programmeremo la tua prima consulenza in base alle tue esigenze. Riceverai un'email o un messaggio di conferma con i dettagli del tuo appuntamento."
+    },
+    {
+      "title": "Consultazione",
+      "description": "Incontra i nostri professionisti dentali che eseguiranno una valutazione completa. Discuti eventuali preoccupazioni riguardanti la tua salute dentale. Ricevi una spiegazione delle opzioni di trattamento e del percorso migliore per le tue esigenze. Un piano di trattamento personalizzato verrà creato per te, inclusi costi e tempi stimati."
+    },
+    {
+      "title": "Revisione del Piano di Trattamento",
+      "description": "Ti guideremo attraverso i dettagli del tuo piano di trattamento, assicurandoci che tu comprenda tutti i passaggi, i costi e i risultati attesi. Eventuali domande o preoccupazioni saranno affrontate in modo approfondito."
+    },
+    {
+      "title": "Pianificazione del Trattamento",
+      "description": "Una volta approvato il piano di trattamento, programmeremo le procedure necessarie. Il nostro team lavorerà in base alla tua disponibilità e ti invierà promemoria man mano che l'appuntamento si avvicina."
+    },
+    {
+      "title": "Giorno del Trattamento",
+      "description": "Arriva in clinica e registrati alla reception. Il nostro team dentale ti guiderà attraverso i passaggi necessari e garantirà il tuo comfort durante la procedura. Il trattamento sarà eseguito con precisione e cura per ottenere il miglior risultato."
+    },
+    {
+      "title": "Cure Post-Trattamento",
+      "description": "Dopo il trattamento, ti forniremo istruzioni specifiche per le cure post-trattamento per garantire un processo di guarigione senza problemi. Eventuali appuntamenti di follow-up necessari saranno programmati per monitorare il tuo recupero."
+    }
+  ]
+},
+"reviews": {
+  "title": "Parole Gentili dai Nostri Pazienti",
+  "reviews_link": "300+ Recensioni a 5 Stelle »",
+  "comments": [
+    {
+      "text": "Servizio fantastico e personale cordiale! Altamente raccomandato.",
+      "author": "- John Doe"
+    },
+    {
+      "text": "Esperienza incredibile, i miei denti non sono mai stati così bene!",
+      "author": "- Jane Smith"
+    },
+    {
+      "text": "Team professionale e premuroso, ti fanno sentire davvero a tuo agio.",
+      "author": "- Mike Brown"
+    }
+  ]
+},
+"contact": {
+  "title": "Mettiti in Contatto",
+  "form": {
+    "heading": "Invia un Messaggio",
+    "firstName": "Nome",
+    "lastName": "Cognome",
+    "email": "Email",
+    "phone": "Telefono",
+    "message": "Messaggio",
+    "sendButton": "Invia"
+  },
+  "info": {
+    "heading": "Informazioni di Contatto",
+    "address": "Komuna e Parisit<br>Tirane",
+    "email": "grisela.daja@gmail.com",
+    "phone": "+355 69 87 67 890"
+  }
+}
+
     
     
   

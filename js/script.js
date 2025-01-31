@@ -112,13 +112,7 @@ window.onscroll = ()=>{
 
 
 
-// Function to toggle the language menu visibility
-function toggleLangMenu() {
-  const langMenu = document.querySelector('.lang-menu ul');
-  console.log("Toggling menu visibility");
 
-  langMenu.style.display = (langMenu.style.display === 'block') ? 'none' : 'block';
-}
 
 // Close the dropdown if clicked outside
 document.addEventListener('click', function(event) {
@@ -460,30 +454,106 @@ function loadLanguage(lang) {
     generalSurgeryItems[index].innerText = item;
   });
 
+      // Update the Technology section
+      document.querySelector('[data-i18n="technology.title"]').textContent = data.technology.title;
+      document.querySelector('[data-i18n="technology.description"]').textContent = data.technology.description;
+      document.querySelector('[data-i18n="tap-to-flip"]').textContent = data.technology["tap-to-flip"];
 
-  // // Update Technology Section
-  // document.querySelector('[data-i18n="technology.title"]').textContent = data.technology.title;
-  // document.querySelector('[data-i18n="technology.description"]').textContent = data.technology.description;
+      // Loop through each service in the Technology section
+      data.technology.services.forEach((service, index) => {
+        // Update the front of the card
+        document.querySelector(`[data-i18n="technology.services[${index}].title"]`).textContent = service.title;
+        document.querySelector(`[data-i18n="technology.services[${index}].description"]`).textContent = service.description;
 
-  // // Loop through each service
-  // data.technology.services.forEach((service, index) => {
-  //   // Update the front of the card
-  //   document.querySelector(`[data-i18n="technology.services[${index}].title"]`).textContent = service.title;
-  //   document.querySelector(`[data-i18n="technology.services[${index}].description"]`).textContent = service.description;
+        // Update the back description of each service (flip_description)
+        service.flip_description.forEach((flip, flipIndex) => {
+          document.querySelector(`[data-i18n="technology.services[${index}].flip_description[${flipIndex}].text"]`).textContent = flip.text;
+        });
+      });
 
-  //   // Update the back description of each service (flip_description)
-  //   service.flip_description.forEach((flip, flipIndex) => {
-  //     document.querySelector(`[data-i18n="technology.services[${index}].flip_description[${flipIndex}].text"]`).textContent = flip.text;
-  //   });
-  // });
-      // Update the selected language in the menu
-      updateLanguageMenu(currentLanguage);
 
+
+ // **Update Gallery Section**
+ document.querySelector(".gallery-title h2").innerText = data.gallery.title;
+ document.querySelector(".gallery-title p").innerText = data.gallery.description;
+
+
+ // Update the Timeline section
+ document.querySelector(".timeline-header__title").textContent = data.timeline.title;
+ document.querySelector(".timeline-header__subtitle").textContent = data.timeline.subtitle;
+
+ // Loop through each step in the Timeline section
+ const timelineItems = document.querySelectorAll(".timeline-item");
+ data.timeline.steps.forEach((step, index) => {
+   if (timelineItems[index]) {
+     timelineItems[index].querySelector(".timeline_content-title").textContent = step.title;
+     timelineItems[index].querySelector(".timeline_content-desc").textContent = step.description;
+   }
+ });
+
+// Update the Reviews section
+document.querySelector(".left-section h2").textContent = data.reviews.title;
+document.querySelector(".reviews-link").textContent = data.reviews.reviews_link;
+
+// Loop through each comment and update its content
+const comments = document.querySelectorAll(".comment");
+data.reviews.comments.forEach((comment, index) => {
+  if (comments[index]) {
+    comments[index].querySelector("p").textContent = comment.text;
+    comments[index].querySelector(".author").textContent = comment.author;
+  }
+});
+
+
+        // Update the Contact section
+        document.querySelector(".contactUs .title h2").textContent = data.contact.title;
+
+     // Update the contact form
+const form = document.querySelector(".contact.form");
+if (form) {
+  form.querySelector("h3").textContent = data.contact.form.heading;
+
+  // Update labels and placeholders
+  const firstNameLabel = form.querySelector('span[data-i18n="contact.form.firstName"]');
+  if (firstNameLabel) firstNameLabel.textContent = data.contact.form.firstName;
+  const firstNameInput = form.querySelector('input[placeholder="Alessandro"]');
+  if (firstNameInput) firstNameInput.placeholder = data.contact.form.firstName;
+
+  const lastNameLabel = form.querySelector('span[data-i18n="contact.form.lastName"]');
+  if (lastNameLabel) lastNameLabel.textContent = data.contact.form.lastName;
+  const lastNameInput = form.querySelector('input[placeholder="Doe"]');
+  if (lastNameInput) lastNameInput.placeholder = data.contact.form.lastName;
+
+  const emailLabel = form.querySelector('span[data-i18n="contact.form.email"]');
+  if (emailLabel) emailLabel.textContent = data.contact.form.email;
+  const emailInput = form.querySelector('input[placeholder="alessandrodoe@gmail.com"]');
+  if (emailInput) emailInput.placeholder = data.contact.form.email;
+
+  const phoneLabel = form.querySelector('span[data-i18n="contact.form.phone"]');
+  if (phoneLabel) phoneLabel.textContent = data.contact.form.phone;
+  const phoneInput = form.querySelector('input[placeholder="+39 2282890893"]');
+  if (phoneInput) phoneInput.placeholder = data.contact.form.phone;
+
+  const messageLabel = form.querySelector('span[data-i18n="contact.form.message"]');
+  if (messageLabel) messageLabel.textContent = data.contact.form.message;
+  const messageTextarea = form.querySelector('textarea[placeholder="Write your message here..."]');
+  if (messageTextarea) messageTextarea.placeholder = data.contact.form.message;
+
+  const submitButton = form.querySelector('input[type="submit"]');
+  if (submitButton) submitButton.value = data.contact.form.sendButton;
+} else {
+  console.error("Contact form not found!"); // Debugging line
+}
      
-   });
+   
+updateLanguageMenu(currentLanguage);
+   
+    })
+  .catch((error) => {
+    console.error("Error loading language file:", error);
+  });
 
-
-    
+ 
 }
 
 // Update the language menu to show the correct options
@@ -498,13 +568,13 @@ function updateLanguageMenu(currentLanguage) {
   document.querySelector(".selected-lang").innerText = selectedLangText;
 
 // Update the flag dynamically
-const selectedLangElement = document.querySelector(".selected-lang");
-const flagMap = {
-  en: "/images/united-kingdom.png",
-  it: "/images/italy.png",
-  sq: "/images/albania.png",
-};
-selectedLangElement.style.backgroundImage = `url(${flagMap[currentLanguage]})`;
+// const selectedLangElement = document.querySelector(".selected-lang");
+// const flagMap = {
+//   en: "/images/united-kingdom.png",
+//   it: "/images/italy.png",
+//   sq: "/images/albania.png",
+// };
+// selectedLangElement.style.backgroundImage = `url(${flagMap[currentLanguage]})`;
   // Wait for the language menu items to be available in the DOM
   const langMenu = document.querySelector(".language-options");
   if (langMenu) {
@@ -546,7 +616,13 @@ selectedLangElement.style.backgroundImage = `url(${flagMap[currentLanguage]})`;
   }
 }
 
+// Function to toggle the language menu visibility
+function toggleLangMenu() {
+  const langMenu = document.querySelector('.lang-menu ul');
+  console.log("Toggling menu visibility");
 
+  langMenu.style.display = (langMenu.style.display === 'block') ? 'none' : 'block';
+}
 // Load the default language (English) when the page is loaded
 document.addEventListener("DOMContentLoaded", function () {
   loadLanguage("en");
