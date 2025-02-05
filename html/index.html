@@ -198,14 +198,26 @@
           <!-- <div id="google_translate_element"></div>  -->
 
           <div class="lang-menu">
-            <div class="selected-lang" onclick="toggleLangMenu()">English</div>
+            <div class="selected-lang" onclick="toggleLangMenu()">
+              <img
+                src="/images/united-kingdom.png"
+                alt="English Flag"
+                class="flag-icon"
+              />English
+            </div>
             <ul class="language-options">
               <li>
                 <a
                   href="javascript:void(0);"
                   class="it"
                   onclick="loadLanguage('it')"
-                  >Italian</a
+                >
+                  <img
+                    src="/images/italy.png"
+                    alt="Italian Flag"
+                    class="flag-icon"
+                  />
+                  Italian</a
                 >
               </li>
               <!-- <li>
@@ -216,7 +228,12 @@
                   href="javascript:void(0);"
                   class="alb"
                   onclick="loadLanguage('sq')"
-                  >Albanian</a
+                >
+                  <img
+                    src="/images/albania.png"
+                    alt="Albanian Flag"
+                    class="flag-icon"
+                  />Albanian</a
                 >
               </li>
             </ul>

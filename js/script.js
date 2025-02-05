@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
       let offset = sec.offsetTop - 150;
       let height = sec.offsetHeight;
       let id = sec.getAttribute('id');
-      console.log(`Section ID: ${id}, Offset: ${offset}, Height: ${height}`);
+     // console.log(`Section ID: ${id}, Offset: ${offset}, Height: ${height}`);
       
       if (top >= offset && top <= offset + height) {
         navLinks.forEach(link => {
@@ -557,6 +557,57 @@ updateLanguageMenu(currentLanguage);
 }
 
 // Update the language menu to show the correct options
+// function updateLanguageMenu(currentLanguage) {
+//   const selectedLangText =
+//     currentLanguage === "en"
+//       ? "English"
+//       : currentLanguage === "it"
+//       ? "Italian"
+//       : "Albanian";
+  
+//   document.querySelector(".selected-lang").innerText = selectedLangText;
+
+
+//   // Wait for the language menu items to be available in the DOM
+//   const langMenu = document.querySelector(".language-options");
+//   if (langMenu) {
+//     const menuItems = langMenu.querySelectorAll('li a');
+
+//     if (menuItems.length > 0) {
+//       // Set the menu options based on the current language
+//       if (currentLanguage === "en") {
+//         menuItems[0].innerText = "Italian";
+//         menuItems[1].innerText = "Albanian";
+//         menuItems[0].setAttribute('href', 'javascript:void(0);');
+//         menuItems[1].setAttribute('href', 'javascript:void(0);');
+        
+//         // Assign click event listeners to each language option
+//         menuItems[0].onclick = function () { loadLanguage('it'); };
+//         menuItems[1].onclick = function () { loadLanguage('sq'); };
+//       } else if (currentLanguage === "it") {
+//         menuItems[0].innerText = "English";
+//         menuItems[1].innerText = "Albanian";
+//         menuItems[0].setAttribute('href', 'javascript:void(0);');
+//         menuItems[1].setAttribute('href', 'javascript:void(0);');
+        
+//         menuItems[0].onclick = function () { loadLanguage('en'); };
+//         menuItems[1].onclick = function () { loadLanguage('sq'); };
+//       } else if (currentLanguage === "sq") {
+//         menuItems[0].innerText = "English";
+//         menuItems[1].innerText = "Italian";
+//         menuItems[0].setAttribute('href', 'javascript:void(0);');
+//         menuItems[1].setAttribute('href', 'javascript:void(0);');
+        
+//         menuItems[0].onclick = function () { loadLanguage('en'); };
+//         menuItems[1].onclick = function () { loadLanguage('it'); };
+//       }
+//     } else {
+//       console.error("Language menu items not found.");
+//     }
+//   } else {
+//     console.error("Language menu not found.");
+//   }
+// }
 function updateLanguageMenu(currentLanguage) {
   const selectedLangText =
     currentLanguage === "en"
@@ -564,49 +615,76 @@ function updateLanguageMenu(currentLanguage) {
       : currentLanguage === "it"
       ? "Italian"
       : "Albanian";
-  
-  document.querySelector(".selected-lang").innerText = selectedLangText;
 
-// Update the flag dynamically
-// const selectedLangElement = document.querySelector(".selected-lang");
-// const flagMap = {
-//   en: "/images/united-kingdom.png",
-//   it: "/images/italy.png",
-//   sq: "/images/albania.png",
-// };
-// selectedLangElement.style.backgroundImage = `url(${flagMap[currentLanguage]})`;
-  // Wait for the language menu items to be available in the DOM
+  // Update the selected language text
+  const selectedLangElement = document.querySelector(".selected-lang");
+  if (selectedLangElement) {
+    console.log("Selected language element found:", selectedLangElement); // Debugging line
+    selectedLangElement.innerText = selectedLangText;
+
+    // Update the selected language flag
+    const flagMap = {
+      en: "/images/united-kingdom.png",
+      it: "/images/italy.png",
+      sq: "/images/albania.png",
+    };
+    const flagIcon = selectedLangElement.querySelector(".flag-icon");
+    if (flagIcon) {
+      console.log("Selected flag icon found:", flagIcon); // Debugging line
+      flagIcon.src = flagMap[currentLanguage];
+      flagIcon.alt = `${selectedLangText} Flag`;
+    } else {
+      console.error("Selected flag icon not found!"); // Debugging line
+    }
+  } else {
+    console.error("Selected language element not found!"); // Debugging line
+  }
+
+  // Update the language menu options
   const langMenu = document.querySelector(".language-options");
   if (langMenu) {
-    const menuItems = langMenu.querySelectorAll('li a');
+    console.log("Language menu found:", langMenu); // Debugging line
+    const menuItems = langMenu.querySelectorAll("li a");
 
     if (menuItems.length > 0) {
+      console.log("Menu items found:", menuItems); // Debugging line
       // Set the menu options based on the current language
       if (currentLanguage === "en") {
         menuItems[0].innerText = "Italian";
         menuItems[1].innerText = "Albanian";
-        menuItems[0].setAttribute('href', 'javascript:void(0);');
-        menuItems[1].setAttribute('href', 'javascript:void(0);');
-        
-        // Assign click event listeners to each language option
-        menuItems[0].onclick = function () { loadLanguage('it'); };
-        menuItems[1].onclick = function () { loadLanguage('sq'); };
+        const flag1 = menuItems[0].querySelector("img.flag-icon");
+        const flag2 = menuItems[1].querySelector("img.flag-icon");
+        if (flag1 && flag2) {
+          console.log("Dropdown flag icons found:", flag1, flag2); // Debugging line
+          flag1.src = "/images/italy.png";
+          flag2.src = "/images/albania.png";
+        } else {
+          console.error("Dropdown flag icons not found!"); // Debugging line
+        }
       } else if (currentLanguage === "it") {
         menuItems[0].innerText = "English";
         menuItems[1].innerText = "Albanian";
-        menuItems[0].setAttribute('href', 'javascript:void(0);');
-        menuItems[1].setAttribute('href', 'javascript:void(0);');
-        
-        menuItems[0].onclick = function () { loadLanguage('en'); };
-        menuItems[1].onclick = function () { loadLanguage('sq'); };
+        const flag1 = menuItems[0].querySelector("img.flag-icon");
+        const flag2 = menuItems[1].querySelector("img.flag-icon");
+        if (flag1 && flag2) {
+          console.log("Dropdown flag icons found:", flag1, flag2); // Debugging line
+          flag1.src = "/images/united-kingdom.png";
+          flag2.src = "/images/albania.png";
+        } else {
+          console.error("Dropdown flag icons not found!"); // Debugging line
+        }
       } else if (currentLanguage === "sq") {
         menuItems[0].innerText = "English";
         menuItems[1].innerText = "Italian";
-        menuItems[0].setAttribute('href', 'javascript:void(0);');
-        menuItems[1].setAttribute('href', 'javascript:void(0);');
-        
-        menuItems[0].onclick = function () { loadLanguage('en'); };
-        menuItems[1].onclick = function () { loadLanguage('it'); };
+        const flag1 = menuItems[0].querySelector("img.flag-icon");
+        const flag2 = menuItems[1].querySelector("img.flag-icon");
+        if (flag1 && flag2) {
+          console.log("Dropdown flag icons found:", flag1, flag2); // Debugging line
+          flag1.src = "/images/united-kingdom.png";
+          flag2.src = "/images/italy.png";
+        } else {
+          console.error("Dropdown flag icons not found!"); // Debugging line
+        }
       }
     } else {
       console.error("Language menu items not found.");
@@ -615,7 +693,6 @@ function updateLanguageMenu(currentLanguage) {
     console.error("Language menu not found.");
   }
 }
-
 // Function to toggle the language menu visibility
 function toggleLangMenu() {
   const langMenu = document.querySelector('.lang-menu ul');

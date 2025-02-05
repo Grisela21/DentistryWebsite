@@ -303,12 +303,19 @@ header .logo img {
 }
 .lang-menu .selected-lang {
   display: flex;   
+  align-items: center; /* Align flag and text vertically */
+
   color: #fff;
   justify-content: space-between;
   line-height: 2;
   cursor: pointer;
 }
-.lang-menu .selected-lang:before {
+.lang-menu .selected-lang .flag-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px; /* Add spacing between flag and text */
+}
+/* .lang-menu .selected-lang:before {
   content: '';
   display: inline-block;
   width: 32px;
@@ -316,7 +323,7 @@ header .logo img {
   background-image: url(/images/united-kingdom.png);
   background-size: contain;
   background-repeat: no-repeat;
-}
+} */
 
 .lang-menu ul {
   margin: 0;
@@ -347,6 +354,8 @@ header .logo img {
   width: 125px;
   padding: 5px 10px;
   display: block;
+  align-items: center; /* Align flag and text vertically */
+
   cursor: pointer; /* Make sure the cursor turns into a pointer */
 
 }
@@ -354,7 +363,12 @@ header .logo img {
   background-color: #f2f2f2; /* Add hover effect */
 }
 
-.lang-menu ul li:hover {
+.lang-menu ul li a .flag-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px; /* Add spacing between flag and text */
+}
+/* .lang-menu ul li:hover {
   background-color: #f2f2f2;
 }
 
@@ -379,10 +393,10 @@ header .logo img {
 .alb:before {
   background-image: url(/images/albania.png);
 }
-
+*/
 .lang-menu:hover ul {
   display: block;
-}
+} 
 
 
 
