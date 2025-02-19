@@ -329,7 +329,7 @@ header .logo img {
   margin: 0;
   padding: 0;
   display: none;
-  background-color: #fff;
+  background-color: #1a1a1a;
   border: 1px solid #f8f8f8;
   position: absolute;
   top: 45px;
@@ -350,17 +350,18 @@ header .logo img {
 }
 
 .lang-menu ul li a {
+  color: #fff;
   text-decoration: none;
   width: 125px;
   padding: 5px 10px;
-  display: block;
+  display: flex;
   align-items: center; /* Align flag and text vertically */
 
   cursor: pointer; /* Make sure the cursor turns into a pointer */
 
 }
 .lang-menu ul li a:hover {
-  background-color: #f2f2f2; /* Add hover effect */
+  background-color: #bdd4dd; /* Add hover effect */
 }
 
 .lang-menu ul li a .flag-icon {

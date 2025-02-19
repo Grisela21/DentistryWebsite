@@ -608,6 +608,92 @@ updateLanguageMenu(currentLanguage);
 //     console.error("Language menu not found.");
 //   }
 // }
+// function updateLanguageMenu(currentLanguage) {
+//   const selectedLangText =
+//     currentLanguage === "en"
+//       ? "English"
+//       : currentLanguage === "it"
+//       ? "Italian"
+//       : "Albanian";
+
+//   // Update the selected language text
+//   const selectedLangElement = document.querySelector(".selected-lang");
+//   if (selectedLangElement) {
+//     console.log("Selected language element found:", selectedLangElement); // Debugging line
+//     selectedLangElement.innerText = selectedLangText;
+
+//     // Update the selected language flag
+//     const flagMap = {
+//       en: "/images/united-kingdom.png",
+//       it: "/images/italy.png",
+//       sq: "/images/albania.png",
+//     };
+//     const flagIcon = selectedLangElement.querySelector(".flag-icon");
+//     if (flagIcon) {
+//       console.log("Selected flag icon found:", flagIcon); // Debugging line
+//       flagIcon.src = flagMap[currentLanguage];
+//       flagIcon.alt = `${selectedLangText} Flag`;
+//     } else {
+//       console.error("Selected flag icon not found!"); // Debugging line
+//     }
+//   } else {
+//     console.error("Selected language element not found!"); // Debugging line
+//   }
+
+//   // Update the language menu options
+//   const langMenu = document.querySelector(".language-options");
+//   if (langMenu) {
+//     console.log("Language menu found:", langMenu); // Debugging line
+//     const menuItems = langMenu.querySelectorAll("li a");
+
+//     if (menuItems.length > 0) {
+//       console.log("Menu items found:", menuItems); // Debugging line
+//       // Set the menu options based on the current language
+//       if (currentLanguage === "en") {
+//         menuItems[0].innerText = "Italian";
+//         menuItems[1].innerText = "Albanian";
+//         const flag1 = menuItems[0].querySelector("img.flag-icon");
+//         const flag2 = menuItems[1].querySelector("img.flag-icon");
+//         if (flag1 && flag2) {
+//           console.log("Dropdown flag icons found:", flag1, flag2); // Debugging line
+//           flag1.src = "/images/italy.png";
+//           flag2.src = "/images/albania.png";
+//         } else {
+//           console.error("Dropdown flag icons not found!"); // Debugging line
+//         }
+//       } else if (currentLanguage === "it") {
+//         menuItems[0].innerText = "English";
+//         menuItems[1].innerText = "Albanian";
+//         const flag1 = menuItems[0].querySelector("img.flag-icon");
+//         const flag2 = menuItems[1].querySelector("img.flag-icon");
+//         if (flag1 && flag2) {
+//           console.log("Dropdown flag icons found:", flag1, flag2); // Debugging line
+//           flag1.src = "/images/united-kingdom.png";
+//           flag2.src = "/images/albania.png";
+//         } else {
+//           console.error("Dropdown flag icons not found!"); // Debugging line
+//         }
+//       } else if (currentLanguage === "sq") {
+//         menuItems[0].innerText = "English";
+//         menuItems[1].innerText = "Italian";
+//         const flag1 = menuItems[0].querySelector("img.flag-icon");
+//         const flag2 = menuItems[1].querySelector("img.flag-icon");
+//         if (flag1 && flag2) {
+//           console.log("Dropdown flag icons found:", flag1, flag2); // Debugging line
+//           flag1.src = "/images/united-kingdom.png";
+//           flag2.src = "/images/italy.png";
+//         } else {
+//           console.error("Dropdown flag icons not found!"); // Debugging line
+//         }
+//       }
+//     } else {
+//       console.error("Language menu items not found.");
+//     }
+//   } else {
+//     console.error("Language menu not found.");
+//   }
+// }
+
 function updateLanguageMenu(currentLanguage) {
   const selectedLangText =
     currentLanguage === "en"
@@ -616,26 +702,33 @@ function updateLanguageMenu(currentLanguage) {
       ? "Italian"
       : "Albanian";
 
-  // Update the selected language text
+  // Update the selected language text and flag
   const selectedLangElement = document.querySelector(".selected-lang");
   if (selectedLangElement) {
     console.log("Selected language element found:", selectedLangElement); // Debugging line
-    selectedLangElement.innerText = selectedLangText;
 
-    // Update the selected language flag
+    // Create or update the flag icon
     const flagMap = {
       en: "/images/united-kingdom.png",
       it: "/images/italy.png",
       sq: "/images/albania.png",
     };
-    const flagIcon = selectedLangElement.querySelector(".flag-icon");
-    if (flagIcon) {
-      console.log("Selected flag icon found:", flagIcon); // Debugging line
-      flagIcon.src = flagMap[currentLanguage];
-      flagIcon.alt = `${selectedLangText} Flag`;
-    } else {
-      console.error("Selected flag icon not found!"); // Debugging line
+
+    // Check if the flag icon already exists
+    let flagIcon = selectedLangElement.querySelector(".flag-icon");
+    if (!flagIcon) {
+      // If the flag icon doesn't exist, create it
+      flagIcon = document.createElement("img");
+      flagIcon.classList.add("flag-icon");
+      selectedLangElement.prepend(flagIcon); // Add the flag icon at the beginning of the selectedLangElement
     }
+
+    // Update the flag icon's src and alt attributes
+    flagIcon.src = flagMap[currentLanguage];
+    flagIcon.alt = `${selectedLangText} Flag`;
+
+    // Update the text content of the selected language element
+    selectedLangElement.innerHTML = `${flagIcon.outerHTML} ${selectedLangText}`;
   } else {
     console.error("Selected language element not found!"); // Debugging line
   }
@@ -648,44 +741,46 @@ function updateLanguageMenu(currentLanguage) {
 
     if (menuItems.length > 0) {
       console.log("Menu items found:", menuItems); // Debugging line
-      // Set the menu options based on the current language
-      if (currentLanguage === "en") {
-        menuItems[0].innerText = "Italian";
-        menuItems[1].innerText = "Albanian";
-        const flag1 = menuItems[0].querySelector("img.flag-icon");
-        const flag2 = menuItems[1].querySelector("img.flag-icon");
-        if (flag1 && flag2) {
-          console.log("Dropdown flag icons found:", flag1, flag2); // Debugging line
-          flag1.src = "/images/italy.png";
-          flag2.src = "/images/albania.png";
-        } else {
-          console.error("Dropdown flag icons not found!"); // Debugging line
+
+      // Define the flag icons for each language option
+      const flagMapMenu = {
+        en: "/images/united-kingdom.png",
+        it: "/images/italy.png",
+        sq: "/images/albania.png",
+      };
+
+      // Update each menu item
+      menuItems.forEach((menuItem, index) => {
+        // Determine the language and flag for this menu item
+        let lang, flagSrc;
+        if (currentLanguage === "en") {
+          lang = index === 0 ? "it" : "sq"; // First item: Italian, Second item: Albanian
+        } else if (currentLanguage === "it") {
+          lang = index === 0 ? "en" : "sq"; // First item: English, Second item: Albanian
+        } else if (currentLanguage === "sq") {
+          lang = index === 0 ? "en" : "it"; // First item: English, Second item: Italian
         }
-      } else if (currentLanguage === "it") {
-        menuItems[0].innerText = "English";
-        menuItems[1].innerText = "Albanian";
-        const flag1 = menuItems[0].querySelector("img.flag-icon");
-        const flag2 = menuItems[1].querySelector("img.flag-icon");
-        if (flag1 && flag2) {
-          console.log("Dropdown flag icons found:", flag1, flag2); // Debugging line
-          flag1.src = "/images/united-kingdom.png";
-          flag2.src = "/images/albania.png";
-        } else {
-          console.error("Dropdown flag icons not found!"); // Debugging line
+        flagSrc = flagMapMenu[lang];
+
+        // Check if the flag icon already exists in the menu item
+        let flagIconMenu = menuItem.querySelector(".flag-icon");
+        if (!flagIconMenu) {
+          // If the flag icon doesn't exist, create it
+          flagIconMenu = document.createElement("img");
+          flagIconMenu.classList.add("flag-icon");
+          menuItem.prepend(flagIconMenu); // Add the flag icon at the beginning of the menu item
         }
-      } else if (currentLanguage === "sq") {
-        menuItems[0].innerText = "English";
-        menuItems[1].innerText = "Italian";
-        const flag1 = menuItems[0].querySelector("img.flag-icon");
-        const flag2 = menuItems[1].querySelector("img.flag-icon");
-        if (flag1 && flag2) {
-          console.log("Dropdown flag icons found:", flag1, flag2); // Debugging line
-          flag1.src = "/images/united-kingdom.png";
-          flag2.src = "/images/italy.png";
-        } else {
-          console.error("Dropdown flag icons not found!"); // Debugging line
-        }
-      }
+
+        // Update the flag icon's src and alt attributes
+        flagIconMenu.src = flagSrc;
+        flagIconMenu.alt = `${lang === "en" ? "English" : lang === "it" ? "Italian" : "Albanian"} Flag`;
+
+        // Update the text content of the menu item
+        menuItem.innerHTML = `${flagIconMenu.outerHTML} ${lang === "en" ? "English" : lang === "it" ? "Italian" : "Albanian"}`;
+
+        // Update the onclick handler for the menu item
+        menuItem.onclick = () => loadLanguage(lang);
+      });
     } else {
       console.error("Language menu items not found.");
     }
@@ -693,6 +788,7 @@ function updateLanguageMenu(currentLanguage) {
     console.error("Language menu not found.");
   }
 }
+
 // Function to toggle the language menu visibility
 function toggleLangMenu() {
   const langMenu = document.querySelector('.lang-menu ul');
