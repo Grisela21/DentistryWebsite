@@ -495,12 +495,13 @@ header {
 
 /* Hero Text Styling */
 .hero-text h1 {
-  font-family: 'Playfair Display', serif; /* Elegant font for headings */
+  font-family: 'Cinzel Decorative', serif; /*'Playfair Display', serif;  Elegant font for headings */
   font-size: 3.5em; /* Larger for prominence */
   font-weight: 700; /* Bold for impact */
   color: #e0f7ff; /* Light cool blue */
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4); /* Adds depth */
   margin-bottom: 0.5em;
+  animation: fadeInDown 1s ease-out; /* Smooth entrance animation */
 }
 
 /* Motto Styling */
@@ -508,12 +509,13 @@ header {
  /* font-family: 'Playfair Display', serif;  Elegant font */
   font-size: 1.8em; /* Slightly smaller than main heading */
   font-weight: 600;
-  color: #80d4ff; /* Soft, trust-inspiring blue */
+  color: #6caaa7; /* Soft, trust-inspiring blue */
   margin-top: 0.5em;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for elegance */
   letter-spacing: 0.05em; /* Slight spacing for luxury feel */
 
   font-family: "Dancing Script", cursive;
+  animation: fadeIn 1.2s ease-in; /* Subtle fade-in effect */
 
 }
 
@@ -524,6 +526,52 @@ header {
   color: #d9d9d9; /* Subtle gray-blue for body text */
   line-height: 1.6;
   margin-bottom: 1.5em;
+  animation: fadeInUp 1.5s ease-out; /* Smooth entrance effect */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .btn-primary {
@@ -531,7 +579,7 @@ header {
   margin-top: 1em;
   /*padding: 0.75em 1.5em;*/
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(45deg, #0e83ff, #0ca3ff); /* Cool blue gradient */
+  background: linear-gradient(to top right, #80d4ff, #484848); /*linear-gradient(45deg, #0e83ff, #0ca3ff);  Cool blue gradient */
    /*#ecedee;*/
   color: #fff;/* #0c0c0c;*/
   text-decoration: none;
@@ -546,10 +594,11 @@ header {
   
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   transition: all 0.3s ease;
+  animation: fadeInUp 1.5s ease-out; /* Smooth entrance effect */
 }
 .btn-primary:hover {
   /*background-color:#777; /* Lighter gray on hover */
-  background: linear-gradient(45deg, #0ca3ff, #66ccff); /* Lighter gradient on hover */
+  background: linear-gradient(to bottom left, #80d4ff, #484848);/*  linear-gradient(45deg, #0ca3ff, #66ccff); Lighter gradient on hover */
   transform: scale(1.1); /* Subtle zoom effect */
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
 }
@@ -729,7 +778,7 @@ height: 5vh;
 }
 
 .service-group .content h2 {
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 15px;
   color: #4d68df;
   font-weight: 600;
@@ -740,25 +789,49 @@ height: 5vh;
 }
 
 .service-group .content p {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.8;
   margin-bottom: 20px;
   color: #d3d3d3;
 }
 
 .service-group .content ul {
+ 
   list-style: none;
   padding-left: 0;
 }
 
 .service-group .content ul li {
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 10px;
   color: #bbb;
   line-height: 1.6;
   position: relative;
   padding-left: 30px;
+ 
 }
+.service-group .content ul li:nth-child(1) { animation-delay: 0.2s; }
+.service-group .content ul li:nth-child(2) { animation-delay: 0.4s; }
+.service-group .content ul li:nth-child(3) { animation-delay: 0.6s; }
+.service-group .content ul li:nth-child(4) { animation-delay: 0.8s; }
+
+
+@keyframes glow {
+  from {
+    opacity: 0;
+    text-shadow: none;
+  }
+  to {
+    opacity: 1;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+  }
+}
+
+.service-group .content ul li {
+  animation: glow 1s ease-in-out;
+}
+
+
 
 .service-group .content ul li:before {
   content: '✔';
@@ -1612,6 +1685,7 @@ border-right: 2px solid rgba(
   z-index: 0;
 }
 
+
 .plane {
   position: absolute;
   left: -20%;
@@ -1688,7 +1762,7 @@ border-right: 2px solid rgba(
   to { opacity: 1; transform: translateY(0); }
 }
 .highlight {
-  color: #007bff; /* Highlight color */
+  color: #6caaa7; /* Highlight color */
   font-weight: bold;
 }
 
