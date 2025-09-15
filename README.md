@@ -1,4 +1,5 @@
 # Dentistry Website 🦷✨
+📄 [View WebSite](PhotosOfWebPage)
 
 A responsive and multilingual website built for a dentistry clinic in Albania, targeting international tourists.  
 The website is available in **English (default)**, **Italian**, and **Albanian**.
