@@ -384,10 +384,10 @@ function updateLanguageMenu(currentLanguage) {
 
     // Create or update the flag icon
     const flagMap = {
-      en: "/images/united-kingdom.png",
-      it: "/images/italy.png",
-      sq: "/images/albania.png",
-    };
+  en: "/DentistryWebsite/images/united-kingdom.png",
+  it: "/DentistryWebsite/images/italy.png",
+  sq: "/DentistryWebsite/images/albania.png",
+};
 
     // Check if the flag icon already exists
     let flagIcon = selectedLangElement.querySelector(".flag-icon");
