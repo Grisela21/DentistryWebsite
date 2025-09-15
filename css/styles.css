@@ -369,32 +369,7 @@ header .logo img {
   height: 25px;
   margin-right: 10px; /* Add spacing between flag and text */
 }
-/* .lang-menu ul li:hover {
-  background-color: #f2f2f2;
-}
 
-.lang-menu ul li a:before {
-  content: '';
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  vertical-align: middle;
-  margin-right: 10px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.it:before {
-  background-image: url(/images/italy.png);
-}
-
-.en:before {
-  background-image: url(/images/united-kingdom.png);
-}
-.alb:before {
-  background-image: url(/images/albania.png);
-}
-*/
 .lang-menu:hover ul {
   display: block;
 } 
@@ -410,7 +385,6 @@ header {
 /* Hero Section */
 .hero {
  height: 70vh;
- /*  background: #000 url('../images/logo.png') center/cover no-repeat; */
   color:  #e8f4fb; /* Cool blue-tinted white for text  #fff;*/
   display: flex;
   align-items: center;
@@ -419,11 +393,6 @@ header {
  position:relative;
   flex-direction: column;
   min-height: 10px;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 400px;
-  padding-top: 100px;*/
   background: #1a1a1a;
   background: linear-gradient(to bottom, #1a1a1a 70%, #1e2a3a 100%); /* Fade to a darker blue */
 
@@ -435,18 +404,7 @@ header {
   
 }
 
-/* .hero-content {
-  padding: 0;
-  margin: 0;
-} */
-/* .hero-image-container img {
-  filter: blur(10px);
-  transition: filter 0.3s ease-in-out;
-}
 
-.hero:hover .hero-image-container img {
-  filter: blur(0px);
-} */
 
 
 .hero-content-container {
@@ -484,14 +442,6 @@ header {
 }
 
 
-/* .btn-primary {
-  background-color: #555; /* Medium gray */
-  /*color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 1.2em;
-  border-radius: 5px;
-} */
 
 /* Hero Text Styling */
 .hero-text h1 {
@@ -609,12 +559,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
- /*  margin-top: -100px;
-  z-index: 2; kjo en we img t ejet siper sectionit pasardhes*/
-  /* transform: scale(1.7); /* 
-  Scale the image by 1.2 times its original size */
-  /*transform-origin: center; /* Set scaling origin to the center */ 
-  
+ 
 }
 
 .hero-image-container .spacer {
@@ -643,30 +588,6 @@ header {
 }
 
 
-/* 
-.curve::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 55%;
-  height: 100%;
-  transform: translate(85%, 60%);
-  background-color: hsl(0, 60%, 39%);
-  
-} */
- 
-/* .curve::after {
-  content: '';
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 150%;
-  height: 100%;
-  background-color: #000000;
-  transform: translate(-1%, 40%);
-  z-index: -1; /* Ensure it is below everything */
-/*} */
  
 .spacer {
   aspect-ratio: 960/300;
@@ -703,8 +624,6 @@ height: 5vh;
 /* Service display section */
 /* Section Styling */
 .services-display {
-  /* padding: 60px 20px;
-  background-color:  #1a1a1a;; */
 
   padding: 80px 20px; /* Adjusted padding for better spacing */
   background: linear-gradient(to top, #1a1a1a 0%, #27373f 100%); /* Smooth gradient */
@@ -863,16 +782,6 @@ height: 5vh;
   /* overflow: hidden; */
   position: relative;
 }
-
-/* Overlay Container */
-/* .overlay-container {
-  background: rgba(255, 255, 255, 0.9); /* White with slight transparency */
- /*  border-radius: 10px;
-  padding: 30px;
-  max-width: 1200px;
-  margin: 0 auto; /* Center content */
- /*  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
-/* }  */
 
 
 /*bubbles*/
@@ -1056,20 +965,6 @@ height: 5vh;
   padding: 20px;
   backface-visibility: hidden;
 }
-/* .thefront {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  backface-visibility: hidden;
-  overflow: hidden;
-  background: #e4eff0;
-  color: #525151;
-  /*padding: 20px;*/
- /*  box-shadow: 0 4px 10px rgba(114, 138, 175, 0.2); /* Subtle shadow for depth */
-/* } */ 
 
 /* Front Styling */
 .thefront {
@@ -1173,22 +1068,6 @@ height: 5vh;
   ); /* Lighter background for contrast */
 }
 
-/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
-/* .theback {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  backface-visibility: hidden;
-  overflow: hidden;
-  background: #fafafa;
-  color: #333;
-  text-align: center;
-  transform: rotateY(180deg);
-  /*padding: 20px;*/
-/* } */
 
 
 /* Back Styling */
@@ -1363,64 +1242,6 @@ height: 5vh;
 
 
 
-/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
- /* .thefront h1, .theback h1{
-  font-family: 'zilla slab', sans-serif;
-  padding: 30px;
-  font-weight: bold;
-  font-size: 24px;
-  text-align: center;
-}
-
-.thefront p, .theback p{
-  font-family: 'zilla slab', sans-serif;
-  font-weight: normal;
-  font-size: 12px;
-  text-align: center;
-}  */
-
-/* Add the flipped class when the card is flipped (Mobile Click Handling) */
-
-/*.services h2 {
-  font-size: 2em;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.service-cards {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.service-card {
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  border-radius: 10px;
-  width: 250px;
-}
-
-.service-card img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.service-card h3 {
-  color: #333;
-  margin-top: 15px;
-}
-
-.flip{
-  transform: rotate(180deg);
-}
-
-.blob-motion {
-  position: absolute;
-  transform: translateY(-20%);
-}
- */
- 
 /*Timeliune section*/
 
 .timeline{
@@ -1649,20 +1470,7 @@ border-right: 2px solid rgba(
 /*   z-index: 1;
  */  
 }
-/* 
-.about-us  p {
-  color: #f1f1f1;
-}
 
-
-.about-us  h2 {
-  color: #f1f1f1;
-}
-.about-us img {
-  max-width: 100%;
-  border-radius: 10px;
-  margin-top: 20px;
-} */
 
 .background {
   position: absolute;
@@ -1734,13 +1542,7 @@ border-right: 2px solid rgba(
 }
 
 .glass-text h1 {
-/*  font-size: 2.5em;
-  margin-bottom: 20px;
-  color: #333;  Ensure good contrast */
 
-  /* font-family: 'Playfair Display', serif;
-    font-size: 3em;
-    color: #1a1a1a; */
     font-family: "Kaushan Script", cursive;
   font-weight: 400;
   font-style: normal;
@@ -1768,9 +1570,7 @@ border-right: 2px solid rgba(
 
 
 .glass-text p {
-  /* font-size: 1.2em;
-  line-height: 1.6;
-  color: #555; */
+
   font-family: 'Lato', sans-serif;
   font-size: 1.1em;
   line-height: 1.8;
@@ -1811,25 +1611,9 @@ border-right: 2px solid rgba(
   margin-top: 10px;
 }
 
-/* image gallery section */
 
 
-/* .image-gallery{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #000;
-  transform-style: preserve-3d;
-  flex-direction: column; /* Stack the images vertically for small screens */
-    /* Full height of the viewport */
-   /*  flex-wrap: wrap;   /* Allow wrapping for better mobile responsiveness */
-   /*  position: relative; */
 
-
-/* }  */
-
-/* Title Section Styling */
 /* Title Section Styling */
 .gallery-title {
   position: absolute;
@@ -2212,47 +1996,6 @@ user-select: none;
 
 
 
-
-/* .contact {
-  padding: 50px;
-  background-color: #484848;
-  text-align: center;
-}
-.contact h2 {
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.contact form {
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.contact input, .contact textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.contact button {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.contact button:hover {
-  background-color: #555;
-} */
-
-/* Section Container */
-/* Reset some default styles */
-
-
 /* Section Styling */
 .reviews-section {
   display: flex;
@@ -2544,60 +2287,12 @@ section {
 } 
  
 
-/* Responsive Adjustments */
-/* @media (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
-
-  .nav-links {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    font-size: 12px;
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logo img {
-    width: 80px;
-  }
-}
- */
-
  @media (max-width: 1230px) {
   .content{
     padding: 0 60px;
   }
 }
-/* @media (max-width: 1100px) {
-  .content{
-    padding: 0 40px;
-  }
-}
-@media (max-width: 900px) {
-  .content{
-    padding: 0 30px;
-  }
-} */
 
-/* Adjustments for screens larger than 1024px */
-/* @media (min-width: 1025px) {
-  .services {
-    justify-content: space-between; /* Keep the cards spaced horizontally */
-  /*   flex-wrap: wrap;
-  }
-
-  .maincontainer {
-    width: 32%; /* 3 cards per row on large screens */
- /*  }
-} */ 
 
 /* Adjustments for tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
@@ -3044,9 +2739,7 @@ section {
 }
 
 
-/*hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
 
-technology part */
 
 @media (max-width: 768px) {
   .services-container {
@@ -3072,35 +2765,6 @@ technology part */
     max-width: 320px;
   }
 }
-
-/* @media (max-width: 800px) {
-  .navbar.show .menu-list {
-    padding: 30px 0;
-  }
-
-  .navbar.show .menu-list li a {
-    font-size: 20px;
-    margin-left: 0; /* Center-align on smaller screens */
- /*  }
-
-  .navbar.show .menu-list .social-icons {
-    gap: 20px; /* Reduced gap for narrower screens */
- /* }
-} 
- 
-@media (max-width: 600px) {
-  .navbar.show .menu-list li {
-    margin-top: 25px;
-  }
-
-  .navbar.show .menu-list .social-icons a {
-    font-size: 1.3em; /* Smaller icons for small screens */
- /* }
-
-  .navbar.show .menu-list .social-icons {
-    gap: 15px; /* Closer spacing on very small screens */
- /* }
-}*/
 
 
 @media (max-width: 380px) {
